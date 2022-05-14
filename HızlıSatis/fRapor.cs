@@ -32,11 +32,11 @@ namespace HızlıSatis
                     var islemozet = db.IslemOzet.Local.ToBindingList();
                     gridListe.DataSource = islemozet;
 
-                    tSatisNakit.Text = Convert.ToDouble(islemozet.Where(x => x.İade == false && x.Gelir == false && x.Gider == false).Sum(x => x.Nakit)).ToString("C2");
-                    tSatisKart.Text = Convert.ToDouble(islemozet.Where(x => x.İade == false && x.Gelir == false && x.Gider == false).Sum(s => s.Kart)).ToString("C2");
+                    tSatisNakit.Text = Convert.ToDouble(islemozet.Where(x => x.Iade == false && x.Gelir == false && x.Gider == false).Sum(x => x.Nakit)).ToString("C2");
+                    tSatisKart.Text = Convert.ToDouble(islemozet.Where(x => x.Iade == false && x.Gelir == false && x.Gider == false).Sum(s => s.Kart)).ToString("C2");
 
-                    tIadeNakit.Text = Convert.ToDouble(islemozet.Where(x => x.İade == true).Sum(x => x.Nakit)).ToString("C2");
-                    tIadeKart.Text = Convert.ToDouble(islemozet.Where(x => x.İade == true).Sum(x => x.Kart)).ToString("C2");
+                    tIadeNakit.Text = Convert.ToDouble(islemozet.Where(x => x.Iade == true).Sum(x => x.Nakit)).ToString("C2");
+                    tIadeKart.Text = Convert.ToDouble(islemozet.Where(x => x.Iade == true).Sum(x => x.Kart)).ToString("C2");
 
                     tGelirNakit.Text = Convert.ToDouble(islemozet.Where(x => x.Gelir == true).Sum(s => s.Nakit)).ToString("C2");
                     tGelirKart.Text = Convert.ToDouble(islemozet.Where(x => x.Gelir == true).Sum(s => s.Kart)).ToString("C2");
@@ -54,14 +54,14 @@ namespace HızlıSatis
 
                 else if (listFiltrelemeturu.SelectedIndex==1)//Satışlar
                 {
-                    db.IslemOzet.Where(x => x.Tarih >= baslangic && x.Tarih <= bitis && x.İade == false && x.Gelir == false && x.Gider == false).Load();
+                    db.IslemOzet.Where(x => x.Tarih >= baslangic && x.Tarih <= bitis && x.Iade == false && x.Gelir == false && x.Gider == false).Load();
                     var islemozet = db.IslemOzet.Local.ToBindingList();
                     gridListe.DataSource = islemozet;
                 }
 
                 else if (listFiltrelemeturu.SelectedIndex==2)//iadeler
                 {
-                    db.IslemOzet.Where(x => x.Tarih >= baslangic && x.Tarih <= bitis && x.İade == true).Load();
+                    db.IslemOzet.Where(x => x.Tarih >= baslangic && x.Tarih <= bitis && x.Iade == true).Load();
                     gridListe.DataSource = db.IslemOzet.Local.ToBindingList();
                 }
                 else if (listFiltrelemeturu.SelectedIndex == 3)//Gelirler
@@ -134,9 +134,22 @@ namespace HızlıSatis
             }
         }
 
-        private void bRaporAl_Click(object sender, EventArgs e)
+        private void bRaporAl_Click_1(object sender, EventArgs e)
         {
-            Raporlar.Baslik = "ŞuBaşlık";
+            Raporlar.Baslik = "GENEL RAPOR";
+            Raporlar.SatisKart = tSatisKart.Text;
+            Raporlar.SatisNakit = tSatisNakit.Text;
+            Raporlar.KartKomisyon = tKartKomisyon.Text;
+            Raporlar.GelirKart = tGelirKart.Text;
+            Raporlar.GelirNakit = tGelirNakit.Text;
+            Raporlar.GiderNakit = tGiderNakit.Text;
+            Raporlar.GiderKart = tGiderKart.Text;
+            Raporlar.IadeKart = tIadeKart.Text;
+            Raporlar.IadeNakit = tIadeNakit.Text;
+            Raporlar.TarihBaslangic = dtBaslangıc.Value.ToShortDateString();
+            Raporlar.TarihBitis = dtBitis.Value.ToShortDateString();
+            Raporlar.KdvToplam = tKdvToplam.Text;
+            Raporlar.RaporSayfasiRaporu(gridListe);
         }
     }
 }

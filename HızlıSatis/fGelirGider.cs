@@ -58,7 +58,7 @@ namespace HızlıSatis
                     {
                         IslemOzet io = new IslemOzet();
                         io.IslemNo = 0;
-                        io.İade = false;
+                        io.Iade = false;
                         io.OdemeSekli = cmbOdemeTuru.Text;
                         io.Nakit = Islemler.DoubleYap(tNakit.Text);
                         io.Kart = Islemler.DoubleYap(tKart.Text);

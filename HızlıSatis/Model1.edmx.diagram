@@ -9,12 +9,12 @@
         <EntityTypeShape EntityType="BarkodDbModel.Terazi" Width="1.5" PointX="3.375" PointY="0.75" />
         <EntityTypeShape EntityType="BarkodDbModel.HizliUrun" Width="1.5" PointX="3.375" PointY="2.25" />
         <EntityTypeShape EntityType="BarkodDbModel.Islem" Width="1.5" PointX="5.75" PointY="0.75" />
-        <EntityTypeShape EntityType="BarkodDbModel.IslemOzet" Width="1.5" PointX="0.875" PointY="4.5" />
         <EntityTypeShape EntityType="BarkodDbModel.Satis" Width="1.5" PointX="4.75" PointY="4.625" />
         <EntityTypeShape EntityType="BarkodDbModel.UrunGrup" Width="1.5" PointX="2.875" PointY="4.5" />
         <EntityTypeShape EntityType="BarkodDbModel.Barkod" Width="1.5" PointX="5.5" PointY="2.625" />
         <EntityTypeShape EntityType="BarkodDbModel.StokHareket" Width="1.5" PointX="6.625" PointY="4.625" />
         <EntityTypeShape EntityType="BarkodDbModel.Sabit" Width="1.5" PointX="8.375" PointY="0.75" />
+        <EntityTypeShape EntityType="BarkodDbModel.IslemOzet" Width="1.5" PointX="0.75" PointY="6.75" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

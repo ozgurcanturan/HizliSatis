@@ -41,8 +41,8 @@
           <DataField>IslemNo</DataField>
           <rd:TypeName>System.Nullable`1[[System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]</rd:TypeName>
         </Field>
-        <Field Name="İade">
-          <DataField>İade</DataField>
+        <Field Name="Iade">
+          <DataField>Iade</DataField>
           <rd:TypeName>System.Nullable`1[[System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]</rd:TypeName>
         </Field>
         <Field Name="Kart">
@@ -81,37 +81,37 @@
             <TablixBody>
               <TablixColumns>
                 <TablixColumn>
-                  <Width>1.611cm</Width>
+                  <Width>1.19589cm</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>1.25117cm</Width>
+                  <Width>1.06571cm</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>1.44167cm</Width>
+                  <Width>0.93275cm</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>1.58983cm</Width>
+                  <Width>1.3115cm</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>1.12417cm</Width>
+                  <Width>1.55873cm</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>1.3125cm</Width>
+                  <Width>1.60961cm</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>1.69567cm</Width>
+                  <Width>1.77148cm</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>2.1825cm</Width>
+                  <Width>2.13486cm</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>3.389cm</Width>
+                  <Width>2.57854cm</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>1.88617cm</Width>
+                  <Width>2.26252cm</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>1.71684cm</Width>
+                  <Width>2.36832cm</Width>
                 </TablixColumn>
               </TablixColumns>
               <TablixRows>
@@ -162,7 +162,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>İade</Value>
+                                  <Value>Iade</Value>
                                   <Style>
                                     <FontSize>9pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
@@ -431,7 +431,6 @@
                             <PaddingBottom>2pt</PaddingBottom>
                           </Style>
                         </Textbox>
-                        <rd:Selected>true</rd:Selected>
                       </CellContents>
                     </TablixCell>
                     <TablixCell>
@@ -546,15 +545,16 @@
                     </TablixCell>
                     <TablixCell>
                       <CellContents>
-                        <Textbox Name="İade">
+                        <Textbox Name="Iade">
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Fields!İade.Value</Value>
+                                  <Value>=iif(Fields!Iade.Value,"a","r")</Value>
                                   <Style>
+                                    <FontFamily>Webdings</FontFamily>
                                     <FontSize>9pt</FontSize>
                                   </Style>
                                 </TextRun>
@@ -564,7 +564,7 @@
                               </Style>
                             </Paragraph>
                           </Paragraphs>
-                          <rd:DefaultName>İade</rd:DefaultName>
+                          <rd:DefaultName>Iade</rd:DefaultName>
                           <Style>
                             <Border>
                               <Color>LightGrey</Color>
@@ -588,8 +588,9 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Fields!Gelir.Value</Value>
+                                  <Value>=iif(Fields!Gelir.Value,"a","r")</Value>
                                   <Style>
+                                    <FontFamily>webdings</FontFamily>
                                     <FontSize>9pt</FontSize>
                                   </Style>
                                 </TextRun>
@@ -623,8 +624,9 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Fields!Gider.Value</Value>
+                                  <Value>=iif(Fields!Gider.Value,"a","r")</Value>
                                   <Style>
+                                    <FontFamily>webdings</FontFamily>
                                     <FontSize>9pt</FontSize>
                                   </Style>
                                 </TextRun>
@@ -658,7 +660,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Fields!Nakit.Value</Value>
+                                  <Value>=iif(Right(Fields!Nakit.Value,2)="00",FormatCurrency(Fields!Nakit.Value,0),FormatCurrency(Fields!Nakit.Value,2))</Value>
                                   <Style>
                                     <FontSize>9pt</FontSize>
                                   </Style>
@@ -693,7 +695,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Fields!Kart.Value</Value>
+                                  <Value>=iif(Right(Fields!Kart.Value,2)="00",FormatCurrency(Fields!Kart.Value,0),FormatCurrency(Fields!Kart.Value,2))</Value>
                                   <Style>
                                     <FontSize>9pt</FontSize>
                                   </Style>
@@ -728,7 +730,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Fields!AlisFiyatToplam.Value</Value>
+                                  <Value>=iif(Right(Fields!AlisFiyatToplam.Value,2)="00",FormatCurrency(Fields!AlisFiyatToplam.Value,0),FormatCurrency(Fields!AlisFiyatToplam.Value,2))</Value>
                                   <Style>
                                     <FontSize>9pt</FontSize>
                                   </Style>
@@ -925,8 +927,9 @@
             </TablixRowHierarchy>
             <DataSetName>dsGenelRapor</DataSetName>
             <Top>6.40503cm</Top>
+            <Left>0.02117cm</Left>
             <Height>1.2cm</Height>
-            <Width>19.2005cm</Width>
+            <Width>18.78988cm</Width>
             <Style>
               <Border>
                 <Style>None</Style>
@@ -951,7 +954,7 @@
                 </Paragraphs>
                 <rd:DefaultName>SatisNakit</rd:DefaultName>
                 <Top>0.91749cm</Top>
-                <Left>6.43711cm</Left>
+                <Left>5.83739cm</Left>
                 <Height>0.6cm</Height>
                 <Width>2.5cm</Width>
                 <Style>
@@ -980,7 +983,7 @@
                 </Paragraphs>
                 <rd:DefaultName>SatisKart</rd:DefaultName>
                 <Top>1.69388cm</Top>
-                <Left>6.43711cm</Left>
+                <Left>5.83739cm</Left>
                 <Height>0.6cm</Height>
                 <Width>2.5cm</Width>
                 <ZIndex>1</ZIndex>
@@ -1012,7 +1015,7 @@
                 </Paragraphs>
                 <rd:DefaultName>Textbox26</rd:DefaultName>
                 <Top>0.1411cm</Top>
-                <Left>5.49167cm</Left>
+                <Left>4.85667cm</Left>
                 <Height>0.6cm</Height>
                 <Width>2.83867cm</Width>
                 <ZIndex>2</ZIndex>
@@ -1042,7 +1045,7 @@
                 </Paragraphs>
                 <rd:DefaultName>Textbox27</rd:DefaultName>
                 <Top>1.69388cm</Top>
-                <Left>5.12461cm</Left>
+                <Left>4.48961cm</Left>
                 <Height>0.6cm</Height>
                 <Width>1.3125cm</Width>
                 <ZIndex>3</ZIndex>
@@ -1072,7 +1075,7 @@
                 </Paragraphs>
                 <rd:DefaultName>Textbox27</rd:DefaultName>
                 <Top>0.91749cm</Top>
-                <Left>5.12461cm</Left>
+                <Left>4.48961cm</Left>
                 <Height>0.6cm</Height>
                 <Width>1.3125cm</Width>
                 <ZIndex>4</ZIndex>
@@ -1104,7 +1107,7 @@
                 </Paragraphs>
                 <rd:DefaultName>Textbox26</rd:DefaultName>
                 <Top>0.14111cm</Top>
-                <Left>11.08667cm</Left>
+                <Left>9.49917cm</Left>
                 <Height>0.6cm</Height>
                 <Width>2.83867cm</Width>
                 <ZIndex>5</ZIndex>
@@ -1134,7 +1137,7 @@
                 </Paragraphs>
                 <rd:DefaultName>Textbox27</rd:DefaultName>
                 <Top>1.69388cm</Top>
-                <Left>10.71961cm</Left>
+                <Left>9.13211cm</Left>
                 <Height>0.6cm</Height>
                 <Width>1.3125cm</Width>
                 <ZIndex>6</ZIndex>
@@ -1164,7 +1167,7 @@
                 </Paragraphs>
                 <rd:DefaultName>Textbox27</rd:DefaultName>
                 <Top>0.91749cm</Top>
-                <Left>10.71961cm</Left>
+                <Left>9.13211cm</Left>
                 <Height>0.6cm</Height>
                 <Width>1.3125cm</Width>
                 <ZIndex>7</ZIndex>
@@ -1196,9 +1199,9 @@
                 </Paragraphs>
                 <rd:DefaultName>Textbox26</rd:DefaultName>
                 <Top>3.36328cm</Top>
-                <Left>16.07256cm</Left>
+                <Left>13.8005cm</Left>
                 <Height>0.6cm</Height>
-                <Width>2.83867cm</Width>
+                <Width>3.495cm</Width>
                 <ZIndex>8</ZIndex>
                 <Style>
                   <Border>
@@ -1226,7 +1229,7 @@
                 </Paragraphs>
                 <rd:DefaultName>Textbox27</rd:DefaultName>
                 <Top>4.91605cm</Top>
-                <Left>15.7055cm</Left>
+                <Left>13.8005cm</Left>
                 <Height>0.6cm</Height>
                 <Width>1.3125cm</Width>
                 <ZIndex>9</ZIndex>
@@ -1256,7 +1259,7 @@
                 </Paragraphs>
                 <rd:DefaultName>Textbox27</rd:DefaultName>
                 <Top>4.13966cm</Top>
-                <Left>15.7055cm</Left>
+                <Left>13.8005cm</Left>
                 <Height>0.6cm</Height>
                 <Width>1.3125cm</Width>
                 <ZIndex>10</ZIndex>
@@ -1288,9 +1291,9 @@
                 </Paragraphs>
                 <rd:DefaultName>Textbox26</rd:DefaultName>
                 <Top>0.14111cm</Top>
-                <Left>16.07256cm</Left>
+                <Left>13.8005cm</Left>
                 <Height>0.6cm</Height>
-                <Width>2.83867cm</Width>
+                <Width>3.495cm</Width>
                 <ZIndex>11</ZIndex>
                 <Style>
                   <Border>
@@ -1318,7 +1321,7 @@
                 </Paragraphs>
                 <rd:DefaultName>Textbox27</rd:DefaultName>
                 <Top>1.69388cm</Top>
-                <Left>15.7055cm</Left>
+                <Left>13.8005cm</Left>
                 <Height>0.6cm</Height>
                 <Width>1.3125cm</Width>
                 <ZIndex>12</ZIndex>
@@ -1348,7 +1351,7 @@
                 </Paragraphs>
                 <rd:DefaultName>Textbox27</rd:DefaultName>
                 <Top>0.91749cm</Top>
-                <Left>15.7055cm</Left>
+                <Left>13.8005cm</Left>
                 <Height>0.6cm</Height>
                 <Width>1.3125cm</Width>
                 <ZIndex>13</ZIndex>
@@ -1378,7 +1381,7 @@
                 </Paragraphs>
                 <rd:DefaultName>IadeNakit</rd:DefaultName>
                 <Top>0.91749cm</Top>
-                <Left>12.2085cm</Left>
+                <Left>10.621cm</Left>
                 <Height>0.6cm</Height>
                 <Width>2.13622cm</Width>
                 <ZIndex>14</ZIndex>
@@ -1392,23 +1395,22 @@
                   <PaddingBottom>2pt</PaddingBottom>
                 </Style>
               </Textbox>
-              <Textbox Name="İadeKart">
+              <Textbox Name="IadeKart">
                 <CanGrow>true</CanGrow>
                 <KeepTogether>true</KeepTogether>
                 <Paragraphs>
                   <Paragraph>
                     <TextRuns>
                       <TextRun>
-                        <Value>=Parameters!İadeKart.Value</Value>
+                        <Value>=Parameters!IadeKart.Value</Value>
                         <Style />
                       </TextRun>
                     </TextRuns>
                     <Style />
                   </Paragraph>
                 </Paragraphs>
-                <rd:DefaultName>İadeKart</rd:DefaultName>
                 <Top>1.69388cm</Top>
-                <Left>12.2085cm</Left>
+                <Left>10.621cm</Left>
                 <Height>0.6cm</Height>
                 <Width>2.13622cm</Width>
                 <ZIndex>15</ZIndex>
@@ -1438,7 +1440,7 @@
                 </Paragraphs>
                 <rd:DefaultName>GelirNakit</rd:DefaultName>
                 <Top>0.91749cm</Top>
-                <Left>17.018cm</Left>
+                <Left>15.113cm</Left>
                 <Height>0.6cm</Height>
                 <Width>2.1825cm</Width>
                 <ZIndex>16</ZIndex>
@@ -1468,7 +1470,7 @@
                 </Paragraphs>
                 <rd:DefaultName>GelirKart</rd:DefaultName>
                 <Top>1.69388cm</Top>
-                <Left>17.018cm</Left>
+                <Left>15.113cm</Left>
                 <Height>0.6cm</Height>
                 <Width>2.1825cm</Width>
                 <ZIndex>17</ZIndex>
@@ -1498,7 +1500,7 @@
                 </Paragraphs>
                 <rd:DefaultName>GiderNakit</rd:DefaultName>
                 <Top>4.13966cm</Top>
-                <Left>16.99194cm</Left>
+                <Left>15.08694cm</Left>
                 <Height>0.6cm</Height>
                 <Width>2.20856cm</Width>
                 <ZIndex>18</ZIndex>
@@ -1528,7 +1530,7 @@
                 </Paragraphs>
                 <rd:DefaultName>GiderKart</rd:DefaultName>
                 <Top>4.91605cm</Top>
-                <Left>16.99194cm</Left>
+                <Left>15.08694cm</Left>
                 <Height>0.6cm</Height>
                 <Width>2.20856cm</Width>
                 <ZIndex>19</ZIndex>
@@ -1560,7 +1562,7 @@
                 </Paragraphs>
                 <rd:DefaultName>Textbox26</rd:DefaultName>
                 <Top>3.46911cm</Top>
-                <Left>11.08667cm</Left>
+                <Left>9.49917cm</Left>
                 <Height>0.6cm</Height>
                 <Width>2.83867cm</Width>
                 <ZIndex>20</ZIndex>
@@ -1581,7 +1583,7 @@
                   <Paragraph>
                     <TextRuns>
                       <TextRun>
-                        <Value>=Parameters!KdvToplam.Value</Value>
+                        <Value>=Parameters!ToplamKdv.Value</Value>
                         <Style />
                       </TextRun>
                     </TextRuns>
@@ -1592,7 +1594,7 @@
                 </Paragraphs>
                 <rd:DefaultName>KdvToplam</rd:DefaultName>
                 <Top>4.13966cm</Top>
-                <Left>11.40417cm</Left>
+                <Left>9.81667cm</Left>
                 <Height>0.6cm</Height>
                 <Width>2.5cm</Width>
                 <ZIndex>21</ZIndex>
@@ -1624,7 +1626,7 @@
                 </Paragraphs>
                 <rd:DefaultName>Textbox26</rd:DefaultName>
                 <Top>3.46911cm</Top>
-                <Left>5.49167cm</Left>
+                <Left>4.85667cm</Left>
                 <Height>0.6cm</Height>
                 <Width>3.44544cm</Width>
                 <ZIndex>22</ZIndex>
@@ -1656,7 +1658,7 @@
                 </Paragraphs>
                 <rd:DefaultName>KartKomisyon</rd:DefaultName>
                 <Top>4.13966cm</Top>
-                <Left>5.49167cm</Left>
+                <Left>4.85667cm</Left>
                 <Height>0.6cm</Height>
                 <Width>2.5cm</Width>
                 <ZIndex>23</ZIndex>
@@ -1688,7 +1690,7 @@
                 </Paragraphs>
                 <rd:DefaultName>Textbox26</rd:DefaultName>
                 <Top>0.14111cm</Top>
-                <Left>0.75776cm</Left>
+                <Left>0.12276cm</Left>
                 <Height>0.6cm</Height>
                 <Width>3.54607cm</Width>
                 <ZIndex>24</ZIndex>
@@ -1720,7 +1722,7 @@
                 </Paragraphs>
                 <rd:DefaultName>Textbox26</rd:DefaultName>
                 <Top>3.46911cm</Top>
-                <Left>0.75776cm</Left>
+                <Left>0.12276cm</Left>
                 <Height>0.6cm</Height>
                 <Width>2.83867cm</Width>
                 <ZIndex>25</ZIndex>
@@ -1741,7 +1743,7 @@
                   <Paragraph>
                     <TextRuns>
                       <TextRun>
-                        <Value>=Parameters!BaslangicTarihi.Value</Value>
+                        <Value>=Parameters!TarihBaslangic.Value</Value>
                         <Style />
                       </TextRun>
                     </TextRuns>
@@ -1750,7 +1752,7 @@
                 </Paragraphs>
                 <rd:DefaultName>BaslangicTarihi</rd:DefaultName>
                 <Top>0.74111cm</Top>
-                <Left>0.75776cm</Left>
+                <Left>0.12276cm</Left>
                 <Height>0.6cm</Height>
                 <Width>2.83867cm</Width>
                 <ZIndex>26</ZIndex>
@@ -1771,7 +1773,7 @@
                   <Paragraph>
                     <TextRuns>
                       <TextRun>
-                        <Value>=Parameters!BitisTarihi.Value</Value>
+                        <Value>=Parameters!TarihBitis.Value</Value>
                         <Style />
                       </TextRun>
                     </TextRuns>
@@ -1780,7 +1782,7 @@
                 </Paragraphs>
                 <rd:DefaultName>BitisTarihi</rd:DefaultName>
                 <Top>4.06911cm</Top>
-                <Left>0.75776cm</Left>
+                <Left>0.12276cm</Left>
                 <Height>0.6cm</Height>
                 <Width>2.83867cm</Width>
                 <ZIndex>27</ZIndex>
@@ -1797,8 +1799,8 @@
             </ReportItems>
             <KeepTogether>true</KeepTogether>
             <Top>0.03528cm</Top>
-            <Height>5.98544cm</Height>
-            <Width>21.96487cm</Width>
+            <Height>5.95347cm</Height>
+            <Width>18.81105cm</Width>
             <ZIndex>1</ZIndex>
             <Style>
               <Border>
@@ -1815,8 +1817,9 @@
           </Rectangle>
           <Line Name="Line1">
             <Top>7.60503cm</Top>
+            <Left>0.02117cm</Left>
             <Height>0cm</Height>
-            <Width>19.2005cm</Width>
+            <Width>18.78988cm</Width>
             <ZIndex>2</ZIndex>
             <Style>
               <Border>
@@ -1824,14 +1827,122 @@
               </Border>
             </Style>
           </Line>
+          <Textbox Name="Textbox4">
+            <CanGrow>true</CanGrow>
+            <KeepTogether>true</KeepTogether>
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>=IIF(Right(ROUND(Sum(Fields!Nakit.Value, "dsGenelRapor"),2),2)="00",FormatCurrency(Round(Sum(Fields!Nakit.Value, "dsGenelRapor"),2),0),FormatCurrency(Round(Sum(Fields!Nakit.Value, "dsGenelRapor"),2),2))</Value>
+                    <Style>
+                      <FontWeight>Bold</FontWeight>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <Style>
+                  <TextAlign>Right</TextAlign>
+                </Style>
+              </Paragraph>
+            </Paragraphs>
+            <rd:DefaultName>Textbox4</rd:DefaultName>
+            <Top>7.74614cm</Top>
+            <Left>4.527cm</Left>
+            <Height>0.6cm</Height>
+            <Width>1.55873cm</Width>
+            <ZIndex>3</ZIndex>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+              <BackgroundColor>LightGrey</BackgroundColor>
+              <VerticalAlign>Middle</VerticalAlign>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+          </Textbox>
+          <Textbox Name="Textbox6">
+            <CanGrow>true</CanGrow>
+            <KeepTogether>true</KeepTogether>
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>=IIF(Right(ROUND(Sum(Fields!Kart.Value, "dsGenelRapor"),2),2)="00",FormatCurrency(Round(Sum(Fields!Kart.Value, "dsGenelRapor"),2),0),FormatCurrency(Round(Sum(Fields!Kart.Value, "dsGenelRapor"),2),2))</Value>
+                    <Style>
+                      <FontWeight>Bold</FontWeight>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <Style>
+                  <TextAlign>Right</TextAlign>
+                </Style>
+              </Paragraph>
+            </Paragraphs>
+            <rd:DefaultName>Textbox4</rd:DefaultName>
+            <Top>7.74614cm</Top>
+            <Left>6.08573cm</Left>
+            <Height>0.6cm</Height>
+            <Width>1.60961cm</Width>
+            <ZIndex>4</ZIndex>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+              <BackgroundColor>LightGrey</BackgroundColor>
+              <VerticalAlign>Middle</VerticalAlign>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+          </Textbox>
+          <Textbox Name="Textbox8">
+            <CanGrow>true</CanGrow>
+            <KeepTogether>true</KeepTogether>
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>=IIF(Right(ROUND(Sum(Fields!AlisFiyatToplam.Value, "dsGenelRapor"),2),2)="00",FormatCurrency(Round(Sum(Fields!AlisFiyatToplam.Value, "dsGenelRapor"),2),0),FormatCurrency(Round(Sum(Fields!AlisFiyatToplam.Value, "dsGenelRapor"),2),2))</Value>
+                    <Style>
+                      <FontWeight>Bold</FontWeight>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <Style>
+                  <TextAlign>Right</TextAlign>
+                </Style>
+              </Paragraph>
+            </Paragraphs>
+            <rd:DefaultName>Textbox4</rd:DefaultName>
+            <Top>7.74614cm</Top>
+            <Left>7.69534cm</Left>
+            <Height>0.6cm</Height>
+            <Width>1.60961cm</Width>
+            <ZIndex>5</ZIndex>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+              <BackgroundColor>LightGrey</BackgroundColor>
+              <VerticalAlign>Middle</VerticalAlign>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+          </Textbox>
         </ReportItems>
-        <Height>3.01538in</Height>
+        <Height>3.28588in</Height>
         <Style />
       </Body>
-      <Width>8.64759in</Width>
+      <Width>7.99384in</Width>
       <Page>
         <PageHeader>
-          <Height>1.6287cm</Height>
+          <Height>0.8667cm</Height>
           <PrintOnFirstPage>true</PrintOnFirstPage>
           <PrintOnLastPage>true</PrintOnLastPage>
           <ReportItems>
@@ -1855,9 +1966,9 @@
                 </Paragraph>
               </Paragraphs>
               <rd:DefaultName>Baslik</rd:DefaultName>
-              <Top>0.7747cm</Top>
+              <Left>0.02117cm</Left>
               <Height>0.854cm</Height>
-              <Width>19.2005cm</Width>
+              <Width>18.78988cm</Width>
               <Style>
                 <Border>
                   <Style>None</Style>
@@ -1876,7 +1987,7 @@
           </Style>
         </PageHeader>
         <PageFooter>
-          <Height>2.54cm</Height>
+          <Height>0.77639cm</Height>
           <PrintOnFirstPage>true</PrintOnFirstPage>
           <PrintOnLastPage>true</PrintOnLastPage>
           <ReportItems>
@@ -1899,9 +2010,8 @@
                 </Paragraph>
               </Paragraphs>
               <rd:DefaultName>PageNumber</rd:DefaultName>
-              <Top>0.32765cm</Top>
-              <Left>9.04242cm</Left>
-              <Height>0.6cm</Height>
+              <Left>7.69534cm</Left>
+              <Height>0.77639cm</Height>
               <Width>2.5cm</Width>
               <Style>
                 <Border>
@@ -1936,11 +2046,11 @@
       <DataType>String</DataType>
       <Prompt>ReportParameter1</Prompt>
     </ReportParameter>
-    <ReportParameter Name="BaslangicTarihi">
+    <ReportParameter Name="TarihBaslangic">
       <DataType>String</DataType>
       <Prompt>ReportParameter1</Prompt>
     </ReportParameter>
-    <ReportParameter Name="BitisTarihi">
+    <ReportParameter Name="TarihBitis">
       <DataType>String</DataType>
       <Prompt>ReportParameter1</Prompt>
     </ReportParameter>
@@ -1956,7 +2066,7 @@
       <DataType>String</DataType>
       <Prompt>ReportParameter1</Prompt>
     </ReportParameter>
-    <ReportParameter Name="İadeKart">
+    <ReportParameter Name="IadeKart">
       <DataType>String</DataType>
       <Prompt>ReportParameter1</Prompt>
     </ReportParameter>
@@ -1976,7 +2086,7 @@
       <DataType>String</DataType>
       <Prompt>ReportParameter1</Prompt>
     </ReportParameter>
-    <ReportParameter Name="KdvToplam">
+    <ReportParameter Name="ToplamKdv">
       <DataType>String</DataType>
       <Prompt>ReportParameter1</Prompt>
     </ReportParameter>
@@ -1998,12 +2108,12 @@
         <CellDefinition>
           <ColumnIndex>1</ColumnIndex>
           <RowIndex>0</RowIndex>
-          <ParameterName>BaslangicTarihi</ParameterName>
+          <ParameterName>TarihBaslangic</ParameterName>
         </CellDefinition>
         <CellDefinition>
           <ColumnIndex>2</ColumnIndex>
           <RowIndex>0</RowIndex>
-          <ParameterName>BitisTarihi</ParameterName>
+          <ParameterName>TarihBitis</ParameterName>
         </CellDefinition>
         <CellDefinition>
           <ColumnIndex>3</ColumnIndex>
@@ -2023,7 +2133,7 @@
         <CellDefinition>
           <ColumnIndex>2</ColumnIndex>
           <RowIndex>1</RowIndex>
-          <ParameterName>İadeKart</ParameterName>
+          <ParameterName>IadeKart</ParameterName>
         </CellDefinition>
         <CellDefinition>
           <ColumnIndex>3</ColumnIndex>
@@ -2048,7 +2158,7 @@
         <CellDefinition>
           <ColumnIndex>3</ColumnIndex>
           <RowIndex>2</RowIndex>
-          <ParameterName>KdvToplam</ParameterName>
+          <ParameterName>ToplamKdv</ParameterName>
         </CellDefinition>
         <CellDefinition>
           <ColumnIndex>0</ColumnIndex>

@@ -29,11 +29,11 @@ namespace HızlıSatis
         public virtual DbSet<Terazi> Terazi { get; set; }
         public virtual DbSet<HizliUrun> HizliUrun { get; set; }
         public virtual DbSet<Islem> Islem { get; set; }
-        public virtual DbSet<IslemOzet> IslemOzet { get; set; }
         public virtual DbSet<Satis> Satis { get; set; }
         public virtual DbSet<UrunGrup> UrunGrup { get; set; }
         public virtual DbSet<Barkod> Barkod { get; set; }
         public virtual DbSet<StokHareket> StokHareket { get; set; }
         public virtual DbSet<Sabit> Sabit { get; set; }
+        public virtual DbSet<IslemOzet> IslemOzet { get; set; }
     }
 }

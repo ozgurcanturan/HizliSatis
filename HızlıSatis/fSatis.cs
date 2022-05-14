@@ -383,7 +383,7 @@ namespace HızlıSatis
 
                 IslemOzet io = new IslemOzet();
                 io.IslemNo = islemno;
-                io.İade = satisiade;
+                io.Iade = satisiade;
                 io.AlisFiyatToplam = alisfiyattoplam;
                 io.Gelir = false;
                 io.Gider = false;

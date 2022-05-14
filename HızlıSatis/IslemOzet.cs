@@ -16,7 +16,7 @@ namespace HızlıSatis
     {
         public int Id { get; set; }
         public Nullable<int> IslemNo { get; set; }
-        public Nullable<bool> İade { get; set; }
+        public Nullable<bool> Iade { get; set; }
         public string OdemeSekli { get; set; }
         public Nullable<double> Nakit { get; set; }
         public Nullable<double> Kart { get; set; }
