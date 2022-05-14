@@ -75,17 +75,17 @@ namespace HızlıSatis
 
         private void tUrunAra_TextChanged(object sender, EventArgs e)
         {
-            if (tUrunAra.Text.Length>=2)
+            if (tUrunAra.Text.Length >= 2)
             {
                 string urunad = tUrunAra.Text;
-                using (var db=new BarkodDbEntities())
+                using (var db = new BarkodDbEntities())
                 {
-                    if (cmbIslemTuru.SelectedIndex==0)
+                    if (cmbIslemTuru.SelectedIndex == 0)
                     {
                         db.Urun.Where(x => x.UrunAd.Contains(urunad)).Load();
                         gridListe.DataSource = db.Urun.Local.ToBindingList();
                     }
-                    else if (cmbIslemTuru.SelectedIndex==1)
+                    else if (cmbIslemTuru.SelectedIndex == 1)
                     {
                         db.StokHareket.Where(x => x.UrunAd.Contains(urunad)).Load();
                         gridListe.DataSource = db.StokHareket.Local.ToBindingList();
@@ -93,6 +93,25 @@ namespace HızlıSatis
                 }
                 Islemler.GridDuzenle(gridListe);
             }
+        }
+
+        private void bRaporAl_Click(object sender, EventArgs e)
+        {
+            if (cmbIslemTuru.SelectedIndex == 0)
+            {
+                Raporlar.Baslik = cmbIslemTuru.Text + " Raporu";
+                Raporlar.TarihBaslangic = dateBaslangıc.Value.ToShortDateString();
+                //Raporlar.TarihBitis = dateBaslangıc.Value.ToShortDateString();
+                Raporlar.StokRaporu(gridListe);
+            }
+            else if (cmbIslemTuru.SelectedIndex == 1)
+            {
+                Raporlar.Baslik = cmbIslemTuru.Text + " Raporu";
+                Raporlar.TarihBaslangic = dateBaslangıc.Value.ToShortDateString();
+                Raporlar.TarihBitis = dateBaslangıc.Value.ToShortDateString();
+                Raporlar.StokIzlemeRaporu(gridListe);
+            }
+
         }
     }
 }

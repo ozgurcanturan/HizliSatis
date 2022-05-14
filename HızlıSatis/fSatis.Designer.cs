@@ -177,7 +177,7 @@ namespace HızlıSatis
             this.splitContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.splitContainer1.FixedPanel = System.Windows.Forms.FixedPanel.Panel1;
             this.splitContainer1.Location = new System.Drawing.Point(0, 0);
-            this.splitContainer1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.splitContainer1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.splitContainer1.Name = "splitContainer1";
             // 
             // splitContainer1.Panel1
@@ -187,8 +187,9 @@ namespace HızlıSatis
             // splitContainer1.Panel2
             // 
             this.splitContainer1.Panel2.Controls.Add(this.splitContainer2);
-            this.splitContainer1.Size = new System.Drawing.Size(1701, 772);
+            this.splitContainer1.Size = new System.Drawing.Size(1155, 627);
             this.splitContainer1.SplitterDistance = 540;
+            this.splitContainer1.SplitterWidth = 3;
             this.splitContainer1.TabIndex = 0;
             // 
             // tableLayoutPanel1
@@ -200,13 +201,12 @@ namespace HızlıSatis
             this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel2, 0, 2);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
-            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(4);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 3;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 123F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 100F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 80F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(540, 772);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(540, 627);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
             // panel1
@@ -221,10 +221,9 @@ namespace HızlıSatis
             this.panel1.Controls.Add(this.tBarkod);
             this.panel1.Controls.Add(this.tMiktar);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Location = new System.Drawing.Point(4, 4);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4);
+            this.panel1.Location = new System.Drawing.Point(3, 3);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(532, 115);
+            this.panel1.Size = new System.Drawing.Size(534, 94);
             this.panel1.TabIndex = 0;
             // 
             // gridBekle
@@ -256,8 +255,7 @@ namespace HızlıSatis
             this.dataGridViewTextBoxColumn9,
             this.dataGridViewImageColumn2});
             this.gridBekle.EnableHeadersVisualStyles = false;
-            this.gridBekle.Location = new System.Drawing.Point(413, 21);
-            this.gridBekle.Margin = new System.Windows.Forms.Padding(4);
+            this.gridBekle.Location = new System.Drawing.Point(310, 17);
             this.gridBekle.Name = "gridBekle";
             this.gridBekle.RowHeadersVisible = false;
             this.gridBekle.RowHeadersWidth = 51;
@@ -269,7 +267,7 @@ namespace HızlıSatis
             this.gridBekle.RowTemplate.DefaultCellStyle.SelectionForeColor = System.Drawing.Color.Black;
             this.gridBekle.RowTemplate.Height = 32;
             this.gridBekle.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.gridBekle.Size = new System.Drawing.Size(115, 22);
+            this.gridBekle.Size = new System.Drawing.Size(86, 18);
             this.gridBekle.TabIndex = 8;
             this.gridBekle.Visible = false;
             // 
@@ -352,9 +350,10 @@ namespace HızlıSatis
             // lNakit
             // 
             this.lNakit.AutoSize = true;
-            this.lNakit.Location = new System.Drawing.Point(375, 47);
+            this.lNakit.Location = new System.Drawing.Point(281, 38);
+            this.lNakit.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lNakit.Name = "lNakit";
-            this.lNakit.Size = new System.Drawing.Size(40, 17);
+            this.lNakit.Size = new System.Drawing.Size(32, 13);
             this.lNakit.TabIndex = 7;
             this.lNakit.Text = "Nakit";
             this.lNakit.Visible = false;
@@ -362,9 +361,10 @@ namespace HızlıSatis
             // lKart
             // 
             this.lKart.AutoSize = true;
-            this.lKart.Location = new System.Drawing.Point(372, 21);
+            this.lKart.Location = new System.Drawing.Point(279, 17);
+            this.lKart.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lKart.Name = "lKart";
-            this.lKart.Size = new System.Drawing.Size(34, 17);
+            this.lKart.Size = new System.Drawing.Size(26, 13);
             this.lKart.TabIndex = 6;
             this.lKart.Text = "Kart";
             this.lKart.Visible = false;
@@ -372,9 +372,10 @@ namespace HızlıSatis
             // lKullanici
             // 
             this.lKullanici.AutoSize = true;
-            this.lKullanici.Location = new System.Drawing.Point(259, 21);
+            this.lKullanici.Location = new System.Drawing.Point(194, 17);
+            this.lKullanici.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lKullanici.Name = "lKullanici";
-            this.lKullanici.Size = new System.Drawing.Size(60, 17);
+            this.lKullanici.Size = new System.Drawing.Size(46, 13);
             this.lKullanici.TabIndex = 5;
             this.lKullanici.Text = "Kullanıcı";
             // 
@@ -388,10 +389,9 @@ namespace HızlıSatis
             this.chSatisIadeIslemi.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.chSatisIadeIslemi.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.chSatisIadeIslemi.ForeColor = System.Drawing.Color.White;
-            this.chSatisIadeIslemi.Location = new System.Drawing.Point(17, 5);
-            this.chSatisIadeIslemi.Margin = new System.Windows.Forms.Padding(4);
+            this.chSatisIadeIslemi.Location = new System.Drawing.Point(13, 4);
             this.chSatisIadeIslemi.Name = "chSatisIadeIslemi";
-            this.chSatisIadeIslemi.Size = new System.Drawing.Size(150, 34);
+            this.chSatisIadeIslemi.Size = new System.Drawing.Size(125, 28);
             this.chSatisIadeIslemi.TabIndex = 4;
             this.chSatisIadeIslemi.Text = "Satış Yapılıyor";
             this.chSatisIadeIslemi.UseVisualStyleBackColor = false;
@@ -402,10 +402,9 @@ namespace HızlıSatis
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label6.ForeColor = System.Drawing.Color.DarkCyan;
-            this.label6.Location = new System.Drawing.Point(125, 47);
-            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label6.Location = new System.Drawing.Point(94, 38);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(80, 25);
+            this.label6.Size = new System.Drawing.Size(66, 20);
             this.label6.TabIndex = 3;
             this.label6.Text = "Barkod";
             // 
@@ -414,20 +413,18 @@ namespace HızlıSatis
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label5.ForeColor = System.Drawing.Color.DarkCyan;
-            this.label5.Location = new System.Drawing.Point(12, 47);
-            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label5.Location = new System.Drawing.Point(9, 38);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(71, 25);
+            this.label5.Size = new System.Drawing.Size(58, 20);
             this.label5.TabIndex = 2;
             this.label5.Text = "Miktar";
             // 
             // tBarkod
             // 
             this.tBarkod.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.tBarkod.Location = new System.Drawing.Point(131, 75);
-            this.tBarkod.Margin = new System.Windows.Forms.Padding(4);
+            this.tBarkod.Location = new System.Drawing.Point(98, 61);
             this.tBarkod.Name = "tBarkod";
-            this.tBarkod.Size = new System.Drawing.Size(320, 30);
+            this.tBarkod.Size = new System.Drawing.Size(241, 26);
             this.tBarkod.TabIndex = 0;
             this.tBarkod.Text = "12345678";
             this.tBarkod.KeyDown += new System.Windows.Forms.KeyEventHandler(this.tBarkod_KeyDown);
@@ -436,10 +433,9 @@ namespace HızlıSatis
             // tMiktar
             // 
             this.tMiktar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.tMiktar.Location = new System.Drawing.Point(12, 75);
-            this.tMiktar.Margin = new System.Windows.Forms.Padding(4);
+            this.tMiktar.Location = new System.Drawing.Point(9, 61);
             this.tMiktar.Name = "tMiktar";
-            this.tMiktar.Size = new System.Drawing.Size(89, 30);
+            this.tMiktar.Size = new System.Drawing.Size(68, 26);
             this.tMiktar.TabIndex = 1;
             this.tMiktar.TabStop = false;
             this.tMiktar.Text = "1";
@@ -476,8 +472,7 @@ namespace HızlıSatis
             this.Sil});
             this.gridSatisListesi.Dock = System.Windows.Forms.DockStyle.Fill;
             this.gridSatisListesi.EnableHeadersVisualStyles = false;
-            this.gridSatisListesi.Location = new System.Drawing.Point(4, 127);
-            this.gridSatisListesi.Margin = new System.Windows.Forms.Padding(4);
+            this.gridSatisListesi.Location = new System.Drawing.Point(3, 103);
             this.gridSatisListesi.Name = "gridSatisListesi";
             this.gridSatisListesi.RowHeadersVisible = false;
             this.gridSatisListesi.RowHeadersWidth = 51;
@@ -489,7 +484,7 @@ namespace HızlıSatis
             this.gridSatisListesi.RowTemplate.DefaultCellStyle.SelectionForeColor = System.Drawing.Color.Black;
             this.gridSatisListesi.RowTemplate.Height = 32;
             this.gridSatisListesi.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.gridSatisListesi.Size = new System.Drawing.Size(532, 511);
+            this.gridSatisListesi.Size = new System.Drawing.Size(534, 415);
             this.gridSatisListesi.TabIndex = 1;
             this.gridSatisListesi.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gridSatisListesi_CellContentClick);
             // 
@@ -581,12 +576,12 @@ namespace HızlıSatis
             this.tableLayoutPanel2.Controls.Add(this.bNakit, 0, 0);
             this.tableLayoutPanel2.Controls.Add(this.tableLayoutPanel3, 3, 0);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel2.Location = new System.Drawing.Point(0, 642);
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(0, 521);
             this.tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(0);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 1;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(540, 130);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(540, 106);
             this.tableLayoutPanel2.TabIndex = 2;
             // 
             // bKartNakit
@@ -601,7 +596,7 @@ namespace HızlıSatis
             this.bKartNakit.Location = new System.Drawing.Point(217, 1);
             this.bKartNakit.Margin = new System.Windows.Forms.Padding(1);
             this.bKartNakit.Name = "bKartNakit";
-            this.bKartNakit.Size = new System.Drawing.Size(106, 128);
+            this.bKartNakit.Size = new System.Drawing.Size(106, 104);
             this.bKartNakit.TabIndex = 2;
             this.bKartNakit.Text = "Nakit\r Kart\n(F3)";
             this.bKartNakit.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
@@ -620,7 +615,7 @@ namespace HızlıSatis
             this.bKart.Location = new System.Drawing.Point(109, 1);
             this.bKart.Margin = new System.Windows.Forms.Padding(1);
             this.bKart.Name = "bKart";
-            this.bKart.Size = new System.Drawing.Size(106, 128);
+            this.bKart.Size = new System.Drawing.Size(106, 104);
             this.bKart.TabIndex = 1;
             this.bKart.Text = "Kart\n(F2)";
             this.bKart.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
@@ -639,7 +634,7 @@ namespace HızlıSatis
             this.bNakit.Location = new System.Drawing.Point(1, 1);
             this.bNakit.Margin = new System.Windows.Forms.Padding(1);
             this.bNakit.Name = "bNakit";
-            this.bNakit.Size = new System.Drawing.Size(106, 128);
+            this.bNakit.Size = new System.Drawing.Size(106, 104);
             this.bNakit.TabIndex = 0;
             this.bNakit.Text = "Nakit\r\n(F1)";
             this.bNakit.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
@@ -658,9 +653,9 @@ namespace HızlıSatis
             this.tableLayoutPanel3.Margin = new System.Windows.Forms.Padding(0, 0, 0, 1);
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
             this.tableLayoutPanel3.RowCount = 2;
-            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 49F));
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 40F));
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel3.Size = new System.Drawing.Size(216, 129);
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(216, 105);
             this.tableLayoutPanel3.TabIndex = 3;
             // 
             // tableLayoutPanel10
@@ -671,13 +666,13 @@ namespace HızlıSatis
             this.tableLayoutPanel10.Controls.Add(this.tableLayoutPanel11, 0, 0);
             this.tableLayoutPanel10.Controls.Add(this.tableLayoutPanel12, 1, 0);
             this.tableLayoutPanel10.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel10.Location = new System.Drawing.Point(0, 49);
+            this.tableLayoutPanel10.Location = new System.Drawing.Point(0, 40);
             this.tableLayoutPanel10.Margin = new System.Windows.Forms.Padding(0);
             this.tableLayoutPanel10.Name = "tableLayoutPanel10";
             this.tableLayoutPanel10.RowCount = 1;
             this.tableLayoutPanel10.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel10.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 80F));
-            this.tableLayoutPanel10.Size = new System.Drawing.Size(216, 80);
+            this.tableLayoutPanel10.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 65F));
+            this.tableLayoutPanel10.Size = new System.Drawing.Size(216, 65);
             this.tableLayoutPanel10.TabIndex = 2;
             // 
             // tableLayoutPanel11
@@ -695,7 +690,7 @@ namespace HızlıSatis
             this.tableLayoutPanel11.RowCount = 2;
             this.tableLayoutPanel11.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel11.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel11.Size = new System.Drawing.Size(108, 80);
+            this.tableLayoutPanel11.Size = new System.Drawing.Size(108, 65);
             this.tableLayoutPanel11.TabIndex = 0;
             // 
             // tOdenen
@@ -705,10 +700,9 @@ namespace HızlıSatis
             this.tOdenen.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tOdenen.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.tOdenen.ForeColor = System.Drawing.Color.White;
-            this.tOdenen.Location = new System.Drawing.Point(4, 44);
-            this.tOdenen.Margin = new System.Windows.Forms.Padding(4);
+            this.tOdenen.Location = new System.Drawing.Point(3, 35);
             this.tOdenen.Name = "tOdenen";
-            this.tOdenen.Size = new System.Drawing.Size(100, 21);
+            this.tOdenen.Size = new System.Drawing.Size(102, 17);
             this.tOdenen.TabIndex = 0;
             this.tOdenen.Text = "0";
             this.tOdenen.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -718,10 +712,9 @@ namespace HızlıSatis
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(4, 0);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(3, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(60, 18);
+            this.label1.Size = new System.Drawing.Size(51, 15);
             this.label1.TabIndex = 1;
             this.label1.Text = "Ödenen";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -740,7 +733,7 @@ namespace HızlıSatis
             this.tableLayoutPanel12.RowCount = 2;
             this.tableLayoutPanel12.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel12.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel12.Size = new System.Drawing.Size(108, 80);
+            this.tableLayoutPanel12.Size = new System.Drawing.Size(108, 65);
             this.tableLayoutPanel12.TabIndex = 1;
             // 
             // tParaUstu
@@ -750,10 +743,9 @@ namespace HızlıSatis
             this.tParaUstu.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tParaUstu.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.tParaUstu.ForeColor = System.Drawing.Color.White;
-            this.tParaUstu.Location = new System.Drawing.Point(4, 44);
-            this.tParaUstu.Margin = new System.Windows.Forms.Padding(4);
+            this.tParaUstu.Location = new System.Drawing.Point(3, 35);
             this.tParaUstu.Name = "tParaUstu";
-            this.tParaUstu.Size = new System.Drawing.Size(100, 21);
+            this.tParaUstu.Size = new System.Drawing.Size(102, 17);
             this.tParaUstu.TabIndex = 0;
             this.tParaUstu.Text = "0";
             this.tParaUstu.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -763,10 +755,9 @@ namespace HızlıSatis
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(4, 0);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Location = new System.Drawing.Point(3, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(74, 18);
+            this.label2.Size = new System.Drawing.Size(61, 15);
             this.label2.TabIndex = 2;
             this.label2.Text = "Para Üstü";
             // 
@@ -780,7 +771,7 @@ namespace HızlıSatis
             this.tGenelToplam.Location = new System.Drawing.Point(1, 1);
             this.tGenelToplam.Margin = new System.Windows.Forms.Padding(1);
             this.tGenelToplam.Name = "tGenelToplam";
-            this.tGenelToplam.Size = new System.Drawing.Size(214, 53);
+            this.tGenelToplam.Size = new System.Drawing.Size(214, 43);
             this.tGenelToplam.TabIndex = 1;
             this.tGenelToplam.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -789,7 +780,6 @@ namespace HızlıSatis
             this.splitContainer2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.splitContainer2.FixedPanel = System.Windows.Forms.FixedPanel.Panel1;
             this.splitContainer2.Location = new System.Drawing.Point(0, 0);
-            this.splitContainer2.Margin = new System.Windows.Forms.Padding(4);
             this.splitContainer2.Name = "splitContainer2";
             this.splitContainer2.Orientation = System.Windows.Forms.Orientation.Horizontal;
             // 
@@ -800,9 +790,8 @@ namespace HızlıSatis
             // splitContainer2.Panel2
             // 
             this.splitContainer2.Panel2.Controls.Add(this.tableLayoutPanel5);
-            this.splitContainer2.Size = new System.Drawing.Size(1157, 772);
+            this.splitContainer2.Size = new System.Drawing.Size(612, 627);
             this.splitContainer2.SplitterDistance = 450;
-            this.splitContainer2.SplitterWidth = 5;
             this.splitContainer2.TabIndex = 0;
             // 
             // tableLayoutPanel4
@@ -840,7 +829,6 @@ namespace HızlıSatis
             this.tableLayoutPanel4.Controls.Add(this.bH9, 3, 1);
             this.tableLayoutPanel4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel4.Location = new System.Drawing.Point(0, 0);
-            this.tableLayoutPanel4.Margin = new System.Windows.Forms.Padding(4);
             this.tableLayoutPanel4.Name = "tableLayoutPanel4";
             this.tableLayoutPanel4.RowCount = 5;
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
@@ -848,8 +836,8 @@ namespace HızlıSatis
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel4.Size = new System.Drawing.Size(1157, 450);
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 16F));
+            this.tableLayoutPanel4.Size = new System.Drawing.Size(612, 450);
             this.tableLayoutPanel4.TabIndex = 0;
             // 
             // bH25
@@ -860,10 +848,10 @@ namespace HızlıSatis
             this.bH25.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bH25.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.bH25.ForeColor = System.Drawing.Color.White;
-            this.bH25.Location = new System.Drawing.Point(925, 361);
+            this.bH25.Location = new System.Drawing.Point(489, 361);
             this.bH25.Margin = new System.Windows.Forms.Padding(1);
             this.bH25.Name = "bH25";
-            this.bH25.Size = new System.Drawing.Size(231, 88);
+            this.bH25.Size = new System.Drawing.Size(122, 88);
             this.bH25.TabIndex = 24;
             this.bH25.Text = "bHizlı";
             this.bH25.UseVisualStyleBackColor = false;
@@ -878,10 +866,10 @@ namespace HızlıSatis
             this.bH24.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bH24.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.bH24.ForeColor = System.Drawing.Color.White;
-            this.bH24.Location = new System.Drawing.Point(694, 361);
+            this.bH24.Location = new System.Drawing.Point(367, 361);
             this.bH24.Margin = new System.Windows.Forms.Padding(1);
             this.bH24.Name = "bH24";
-            this.bH24.Size = new System.Drawing.Size(229, 88);
+            this.bH24.Size = new System.Drawing.Size(120, 88);
             this.bH24.TabIndex = 23;
             this.bH24.Text = "bHizlı";
             this.bH24.UseVisualStyleBackColor = false;
@@ -896,10 +884,10 @@ namespace HızlıSatis
             this.bH23.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bH23.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.bH23.ForeColor = System.Drawing.Color.White;
-            this.bH23.Location = new System.Drawing.Point(463, 361);
+            this.bH23.Location = new System.Drawing.Point(245, 361);
             this.bH23.Margin = new System.Windows.Forms.Padding(1);
             this.bH23.Name = "bH23";
-            this.bH23.Size = new System.Drawing.Size(229, 88);
+            this.bH23.Size = new System.Drawing.Size(120, 88);
             this.bH23.TabIndex = 22;
             this.bH23.Text = "bHizlı";
             this.bH23.UseVisualStyleBackColor = false;
@@ -914,10 +902,10 @@ namespace HızlıSatis
             this.bH22.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bH22.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.bH22.ForeColor = System.Drawing.Color.White;
-            this.bH22.Location = new System.Drawing.Point(232, 361);
+            this.bH22.Location = new System.Drawing.Point(123, 361);
             this.bH22.Margin = new System.Windows.Forms.Padding(1);
             this.bH22.Name = "bH22";
-            this.bH22.Size = new System.Drawing.Size(229, 88);
+            this.bH22.Size = new System.Drawing.Size(120, 88);
             this.bH22.TabIndex = 21;
             this.bH22.Text = "bHizlı";
             this.bH22.UseVisualStyleBackColor = false;
@@ -935,7 +923,7 @@ namespace HızlıSatis
             this.bH21.Location = new System.Drawing.Point(1, 361);
             this.bH21.Margin = new System.Windows.Forms.Padding(1);
             this.bH21.Name = "bH21";
-            this.bH21.Size = new System.Drawing.Size(229, 88);
+            this.bH21.Size = new System.Drawing.Size(120, 88);
             this.bH21.TabIndex = 20;
             this.bH21.Text = "bHizlı";
             this.bH21.UseVisualStyleBackColor = false;
@@ -950,10 +938,10 @@ namespace HızlıSatis
             this.bH20.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bH20.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.bH20.ForeColor = System.Drawing.Color.White;
-            this.bH20.Location = new System.Drawing.Point(925, 271);
+            this.bH20.Location = new System.Drawing.Point(489, 271);
             this.bH20.Margin = new System.Windows.Forms.Padding(1);
             this.bH20.Name = "bH20";
-            this.bH20.Size = new System.Drawing.Size(231, 88);
+            this.bH20.Size = new System.Drawing.Size(122, 88);
             this.bH20.TabIndex = 19;
             this.bH20.Text = "bHizlı";
             this.bH20.UseVisualStyleBackColor = false;
@@ -968,10 +956,10 @@ namespace HızlıSatis
             this.bH19.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bH19.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.bH19.ForeColor = System.Drawing.Color.White;
-            this.bH19.Location = new System.Drawing.Point(694, 271);
+            this.bH19.Location = new System.Drawing.Point(367, 271);
             this.bH19.Margin = new System.Windows.Forms.Padding(1);
             this.bH19.Name = "bH19";
-            this.bH19.Size = new System.Drawing.Size(229, 88);
+            this.bH19.Size = new System.Drawing.Size(120, 88);
             this.bH19.TabIndex = 18;
             this.bH19.Text = "bHizlı";
             this.bH19.UseVisualStyleBackColor = false;
@@ -986,10 +974,10 @@ namespace HızlıSatis
             this.bH18.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bH18.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.bH18.ForeColor = System.Drawing.Color.White;
-            this.bH18.Location = new System.Drawing.Point(463, 271);
+            this.bH18.Location = new System.Drawing.Point(245, 271);
             this.bH18.Margin = new System.Windows.Forms.Padding(1);
             this.bH18.Name = "bH18";
-            this.bH18.Size = new System.Drawing.Size(229, 88);
+            this.bH18.Size = new System.Drawing.Size(120, 88);
             this.bH18.TabIndex = 17;
             this.bH18.Text = "bHizlı";
             this.bH18.UseVisualStyleBackColor = false;
@@ -1004,10 +992,10 @@ namespace HızlıSatis
             this.bH17.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bH17.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.bH17.ForeColor = System.Drawing.Color.White;
-            this.bH17.Location = new System.Drawing.Point(232, 271);
+            this.bH17.Location = new System.Drawing.Point(123, 271);
             this.bH17.Margin = new System.Windows.Forms.Padding(1);
             this.bH17.Name = "bH17";
-            this.bH17.Size = new System.Drawing.Size(229, 88);
+            this.bH17.Size = new System.Drawing.Size(120, 88);
             this.bH17.TabIndex = 16;
             this.bH17.Text = "bHizlı";
             this.bH17.UseVisualStyleBackColor = false;
@@ -1025,7 +1013,7 @@ namespace HızlıSatis
             this.bH16.Location = new System.Drawing.Point(1, 271);
             this.bH16.Margin = new System.Windows.Forms.Padding(1);
             this.bH16.Name = "bH16";
-            this.bH16.Size = new System.Drawing.Size(229, 88);
+            this.bH16.Size = new System.Drawing.Size(120, 88);
             this.bH16.TabIndex = 15;
             this.bH16.Text = "bHizlı";
             this.bH16.UseVisualStyleBackColor = false;
@@ -1040,10 +1028,10 @@ namespace HızlıSatis
             this.bH15.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bH15.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.bH15.ForeColor = System.Drawing.Color.White;
-            this.bH15.Location = new System.Drawing.Point(925, 181);
+            this.bH15.Location = new System.Drawing.Point(489, 181);
             this.bH15.Margin = new System.Windows.Forms.Padding(1);
             this.bH15.Name = "bH15";
-            this.bH15.Size = new System.Drawing.Size(231, 88);
+            this.bH15.Size = new System.Drawing.Size(122, 88);
             this.bH15.TabIndex = 14;
             this.bH15.Text = "bHizlı";
             this.bH15.UseVisualStyleBackColor = false;
@@ -1058,10 +1046,10 @@ namespace HızlıSatis
             this.bH14.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bH14.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.bH14.ForeColor = System.Drawing.Color.White;
-            this.bH14.Location = new System.Drawing.Point(694, 181);
+            this.bH14.Location = new System.Drawing.Point(367, 181);
             this.bH14.Margin = new System.Windows.Forms.Padding(1);
             this.bH14.Name = "bH14";
-            this.bH14.Size = new System.Drawing.Size(229, 88);
+            this.bH14.Size = new System.Drawing.Size(120, 88);
             this.bH14.TabIndex = 13;
             this.bH14.Text = "bHizlı";
             this.bH14.UseVisualStyleBackColor = false;
@@ -1076,10 +1064,10 @@ namespace HızlıSatis
             this.bH13.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bH13.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.bH13.ForeColor = System.Drawing.Color.White;
-            this.bH13.Location = new System.Drawing.Point(463, 181);
+            this.bH13.Location = new System.Drawing.Point(245, 181);
             this.bH13.Margin = new System.Windows.Forms.Padding(1);
             this.bH13.Name = "bH13";
-            this.bH13.Size = new System.Drawing.Size(229, 88);
+            this.bH13.Size = new System.Drawing.Size(120, 88);
             this.bH13.TabIndex = 12;
             this.bH13.Text = "bHizlı";
             this.bH13.UseVisualStyleBackColor = false;
@@ -1094,10 +1082,10 @@ namespace HızlıSatis
             this.bH12.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bH12.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.bH12.ForeColor = System.Drawing.Color.White;
-            this.bH12.Location = new System.Drawing.Point(232, 181);
+            this.bH12.Location = new System.Drawing.Point(123, 181);
             this.bH12.Margin = new System.Windows.Forms.Padding(1);
             this.bH12.Name = "bH12";
-            this.bH12.Size = new System.Drawing.Size(229, 88);
+            this.bH12.Size = new System.Drawing.Size(120, 88);
             this.bH12.TabIndex = 11;
             this.bH12.Text = "bHizlı";
             this.bH12.UseVisualStyleBackColor = false;
@@ -1115,7 +1103,7 @@ namespace HızlıSatis
             this.bH11.Location = new System.Drawing.Point(1, 181);
             this.bH11.Margin = new System.Windows.Forms.Padding(1);
             this.bH11.Name = "bH11";
-            this.bH11.Size = new System.Drawing.Size(229, 88);
+            this.bH11.Size = new System.Drawing.Size(120, 88);
             this.bH11.TabIndex = 10;
             this.bH11.Text = "bHizlı";
             this.bH11.UseVisualStyleBackColor = false;
@@ -1130,10 +1118,10 @@ namespace HızlıSatis
             this.bH10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bH10.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.bH10.ForeColor = System.Drawing.Color.White;
-            this.bH10.Location = new System.Drawing.Point(925, 91);
+            this.bH10.Location = new System.Drawing.Point(489, 91);
             this.bH10.Margin = new System.Windows.Forms.Padding(1);
             this.bH10.Name = "bH10";
-            this.bH10.Size = new System.Drawing.Size(231, 88);
+            this.bH10.Size = new System.Drawing.Size(122, 88);
             this.bH10.TabIndex = 9;
             this.bH10.Text = "bHizlı";
             this.bH10.UseVisualStyleBackColor = false;
@@ -1148,10 +1136,10 @@ namespace HızlıSatis
             this.bH8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bH8.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.bH8.ForeColor = System.Drawing.Color.White;
-            this.bH8.Location = new System.Drawing.Point(463, 91);
+            this.bH8.Location = new System.Drawing.Point(245, 91);
             this.bH8.Margin = new System.Windows.Forms.Padding(1);
             this.bH8.Name = "bH8";
-            this.bH8.Size = new System.Drawing.Size(229, 88);
+            this.bH8.Size = new System.Drawing.Size(120, 88);
             this.bH8.TabIndex = 7;
             this.bH8.Text = "bHizlı";
             this.bH8.UseVisualStyleBackColor = false;
@@ -1166,10 +1154,10 @@ namespace HızlıSatis
             this.bH7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bH7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.bH7.ForeColor = System.Drawing.Color.White;
-            this.bH7.Location = new System.Drawing.Point(232, 91);
+            this.bH7.Location = new System.Drawing.Point(123, 91);
             this.bH7.Margin = new System.Windows.Forms.Padding(1);
             this.bH7.Name = "bH7";
-            this.bH7.Size = new System.Drawing.Size(229, 88);
+            this.bH7.Size = new System.Drawing.Size(120, 88);
             this.bH7.TabIndex = 6;
             this.bH7.Text = "bHizlı";
             this.bH7.UseVisualStyleBackColor = false;
@@ -1187,7 +1175,7 @@ namespace HızlıSatis
             this.bH6.Location = new System.Drawing.Point(1, 91);
             this.bH6.Margin = new System.Windows.Forms.Padding(1);
             this.bH6.Name = "bH6";
-            this.bH6.Size = new System.Drawing.Size(229, 88);
+            this.bH6.Size = new System.Drawing.Size(120, 88);
             this.bH6.TabIndex = 5;
             this.bH6.Text = "bHizlı";
             this.bH6.UseVisualStyleBackColor = false;
@@ -1202,10 +1190,10 @@ namespace HızlıSatis
             this.bH5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bH5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.bH5.ForeColor = System.Drawing.Color.White;
-            this.bH5.Location = new System.Drawing.Point(925, 1);
+            this.bH5.Location = new System.Drawing.Point(489, 1);
             this.bH5.Margin = new System.Windows.Forms.Padding(1);
             this.bH5.Name = "bH5";
-            this.bH5.Size = new System.Drawing.Size(231, 88);
+            this.bH5.Size = new System.Drawing.Size(122, 88);
             this.bH5.TabIndex = 4;
             this.bH5.Text = "bHizlı";
             this.bH5.UseVisualStyleBackColor = false;
@@ -1220,10 +1208,10 @@ namespace HızlıSatis
             this.bH4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bH4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.bH4.ForeColor = System.Drawing.Color.White;
-            this.bH4.Location = new System.Drawing.Point(694, 1);
+            this.bH4.Location = new System.Drawing.Point(367, 1);
             this.bH4.Margin = new System.Windows.Forms.Padding(1);
             this.bH4.Name = "bH4";
-            this.bH4.Size = new System.Drawing.Size(229, 88);
+            this.bH4.Size = new System.Drawing.Size(120, 88);
             this.bH4.TabIndex = 3;
             this.bH4.Text = "bHizlı";
             this.bH4.UseVisualStyleBackColor = false;
@@ -1238,10 +1226,10 @@ namespace HızlıSatis
             this.bH3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bH3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.bH3.ForeColor = System.Drawing.Color.White;
-            this.bH3.Location = new System.Drawing.Point(463, 1);
+            this.bH3.Location = new System.Drawing.Point(245, 1);
             this.bH3.Margin = new System.Windows.Forms.Padding(1);
             this.bH3.Name = "bH3";
-            this.bH3.Size = new System.Drawing.Size(229, 88);
+            this.bH3.Size = new System.Drawing.Size(120, 88);
             this.bH3.TabIndex = 2;
             this.bH3.Text = "bHizlı";
             this.bH3.UseVisualStyleBackColor = false;
@@ -1256,10 +1244,10 @@ namespace HızlıSatis
             this.bH2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bH2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.bH2.ForeColor = System.Drawing.Color.White;
-            this.bH2.Location = new System.Drawing.Point(232, 1);
+            this.bH2.Location = new System.Drawing.Point(123, 1);
             this.bH2.Margin = new System.Windows.Forms.Padding(1);
             this.bH2.Name = "bH2";
-            this.bH2.Size = new System.Drawing.Size(229, 88);
+            this.bH2.Size = new System.Drawing.Size(120, 88);
             this.bH2.TabIndex = 1;
             this.bH2.Text = "bH2";
             this.bH2.UseVisualStyleBackColor = false;
@@ -1277,7 +1265,7 @@ namespace HızlıSatis
             this.bH1.Location = new System.Drawing.Point(1, 1);
             this.bH1.Margin = new System.Windows.Forms.Padding(1);
             this.bH1.Name = "bH1";
-            this.bH1.Size = new System.Drawing.Size(229, 88);
+            this.bH1.Size = new System.Drawing.Size(120, 88);
             this.bH1.TabIndex = 0;
             this.bH1.Text = "bH1";
             this.bH1.UseVisualStyleBackColor = false;
@@ -1292,10 +1280,10 @@ namespace HızlıSatis
             this.bH9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bH9.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.bH9.ForeColor = System.Drawing.Color.White;
-            this.bH9.Location = new System.Drawing.Point(694, 91);
+            this.bH9.Location = new System.Drawing.Point(367, 91);
             this.bH9.Margin = new System.Windows.Forms.Padding(1);
             this.bH9.Name = "bH9";
-            this.bH9.Size = new System.Drawing.Size(229, 88);
+            this.bH9.Size = new System.Drawing.Size(120, 88);
             this.bH9.TabIndex = 25;
             this.bH9.Text = "bHizli";
             this.bH9.UseVisualStyleBackColor = false;
@@ -1313,11 +1301,10 @@ namespace HızlıSatis
             this.tableLayoutPanel5.Controls.Add(this.tableLayoutPanel9, 2, 0);
             this.tableLayoutPanel5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel5.Location = new System.Drawing.Point(0, 0);
-            this.tableLayoutPanel5.Margin = new System.Windows.Forms.Padding(4);
             this.tableLayoutPanel5.Name = "tableLayoutPanel5";
             this.tableLayoutPanel5.RowCount = 1;
             this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel5.Size = new System.Drawing.Size(1157, 317);
+            this.tableLayoutPanel5.Size = new System.Drawing.Size(612, 173);
             this.tableLayoutPanel5.TabIndex = 0;
             // 
             // tableLayoutPanel6
@@ -1341,7 +1328,7 @@ namespace HızlıSatis
             this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
             this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
             this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
-            this.tableLayoutPanel6.Size = new System.Drawing.Size(275, 317);
+            this.tableLayoutPanel6.Size = new System.Drawing.Size(145, 173);
             this.tableLayoutPanel6.TabIndex = 0;
             // 
             // b200
@@ -1352,10 +1339,10 @@ namespace HızlıSatis
             this.b200.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.b200.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.b200.ForeColor = System.Drawing.Color.White;
-            this.b200.Location = new System.Drawing.Point(1, 261);
+            this.b200.Location = new System.Drawing.Point(1, 141);
             this.b200.Margin = new System.Windows.Forms.Padding(1);
             this.b200.Name = "b200";
-            this.b200.Size = new System.Drawing.Size(273, 55);
+            this.b200.Size = new System.Drawing.Size(143, 31);
             this.b200.TabIndex = 5;
             this.b200.Text = "200";
             this.b200.UseVisualStyleBackColor = false;
@@ -1369,10 +1356,10 @@ namespace HızlıSatis
             this.b100.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.b100.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.b100.ForeColor = System.Drawing.Color.White;
-            this.b100.Location = new System.Drawing.Point(1, 209);
+            this.b100.Location = new System.Drawing.Point(1, 113);
             this.b100.Margin = new System.Windows.Forms.Padding(1);
             this.b100.Name = "b100";
-            this.b100.Size = new System.Drawing.Size(273, 50);
+            this.b100.Size = new System.Drawing.Size(143, 26);
             this.b100.TabIndex = 4;
             this.b100.Text = "100";
             this.b100.UseVisualStyleBackColor = false;
@@ -1386,10 +1373,10 @@ namespace HızlıSatis
             this.b50.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.b50.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.b50.ForeColor = System.Drawing.Color.White;
-            this.b50.Location = new System.Drawing.Point(1, 157);
+            this.b50.Location = new System.Drawing.Point(1, 85);
             this.b50.Margin = new System.Windows.Forms.Padding(1);
             this.b50.Name = "b50";
-            this.b50.Size = new System.Drawing.Size(273, 50);
+            this.b50.Size = new System.Drawing.Size(143, 26);
             this.b50.TabIndex = 3;
             this.b50.Text = "50";
             this.b50.UseVisualStyleBackColor = false;
@@ -1403,10 +1390,10 @@ namespace HızlıSatis
             this.b20.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.b20.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.b20.ForeColor = System.Drawing.Color.White;
-            this.b20.Location = new System.Drawing.Point(1, 105);
+            this.b20.Location = new System.Drawing.Point(1, 57);
             this.b20.Margin = new System.Windows.Forms.Padding(1);
             this.b20.Name = "b20";
-            this.b20.Size = new System.Drawing.Size(273, 50);
+            this.b20.Size = new System.Drawing.Size(143, 26);
             this.b20.TabIndex = 2;
             this.b20.Text = "20";
             this.b20.UseVisualStyleBackColor = false;
@@ -1420,10 +1407,10 @@ namespace HızlıSatis
             this.b10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.b10.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.b10.ForeColor = System.Drawing.Color.White;
-            this.b10.Location = new System.Drawing.Point(1, 53);
+            this.b10.Location = new System.Drawing.Point(1, 29);
             this.b10.Margin = new System.Windows.Forms.Padding(1);
             this.b10.Name = "b10";
-            this.b10.Size = new System.Drawing.Size(273, 50);
+            this.b10.Size = new System.Drawing.Size(143, 26);
             this.b10.TabIndex = 1;
             this.b10.Text = "10";
             this.b10.UseVisualStyleBackColor = false;
@@ -1440,7 +1427,7 @@ namespace HızlıSatis
             this.b5.Location = new System.Drawing.Point(1, 1);
             this.b5.Margin = new System.Windows.Forms.Padding(1);
             this.b5.Name = "b5";
-            this.b5.Size = new System.Drawing.Size(273, 50);
+            this.b5.Size = new System.Drawing.Size(143, 26);
             this.b5.TabIndex = 0;
             this.b5.Text = "5";
             this.b5.UseVisualStyleBackColor = false;
@@ -1453,13 +1440,13 @@ namespace HızlıSatis
             this.tableLayoutPanel7.Controls.Add(this.tNumarator, 0, 0);
             this.tableLayoutPanel7.Controls.Add(this.tableLayoutPanel8, 0, 1);
             this.tableLayoutPanel7.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel7.Location = new System.Drawing.Point(275, 0);
+            this.tableLayoutPanel7.Location = new System.Drawing.Point(145, 0);
             this.tableLayoutPanel7.Margin = new System.Windows.Forms.Padding(0);
             this.tableLayoutPanel7.Name = "tableLayoutPanel7";
             this.tableLayoutPanel7.RowCount = 2;
-            this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 42F));
+            this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 34F));
             this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel7.Size = new System.Drawing.Size(440, 317);
+            this.tableLayoutPanel7.Size = new System.Drawing.Size(233, 173);
             this.tableLayoutPanel7.TabIndex = 1;
             // 
             // tNumarator
@@ -1470,7 +1457,7 @@ namespace HızlıSatis
             this.tNumarator.Location = new System.Drawing.Point(1, 1);
             this.tNumarator.Margin = new System.Windows.Forms.Padding(1);
             this.tNumarator.Name = "tNumarator";
-            this.tNumarator.Size = new System.Drawing.Size(438, 34);
+            this.tNumarator.Size = new System.Drawing.Size(231, 29);
             this.tNumarator.TabIndex = 2;
             this.tNumarator.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -1493,7 +1480,7 @@ namespace HızlıSatis
             this.tableLayoutPanel8.Controls.Add(this.bN0, 1, 3);
             this.tableLayoutPanel8.Controls.Add(this.bNV, 2, 3);
             this.tableLayoutPanel8.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel8.Location = new System.Drawing.Point(1, 43);
+            this.tableLayoutPanel8.Location = new System.Drawing.Point(1, 35);
             this.tableLayoutPanel8.Margin = new System.Windows.Forms.Padding(1);
             this.tableLayoutPanel8.Name = "tableLayoutPanel8";
             this.tableLayoutPanel8.RowCount = 4;
@@ -1501,7 +1488,7 @@ namespace HızlıSatis
             this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel8.Size = new System.Drawing.Size(438, 273);
+            this.tableLayoutPanel8.Size = new System.Drawing.Size(231, 137);
             this.tableLayoutPanel8.TabIndex = 0;
             // 
             // bN1
@@ -1512,10 +1499,10 @@ namespace HızlıSatis
             this.bN1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bN1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.bN1.ForeColor = System.Drawing.Color.White;
-            this.bN1.Location = new System.Drawing.Point(3, 2);
-            this.bN1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.bN1.Location = new System.Drawing.Point(2, 2);
+            this.bN1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.bN1.Name = "bN1";
-            this.bN1.Size = new System.Drawing.Size(140, 64);
+            this.bN1.Size = new System.Drawing.Size(73, 30);
             this.bN1.TabIndex = 0;
             this.bN1.Text = "1";
             this.bN1.UseVisualStyleBackColor = false;
@@ -1529,10 +1516,10 @@ namespace HızlıSatis
             this.bN2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bN2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.bN2.ForeColor = System.Drawing.Color.White;
-            this.bN2.Location = new System.Drawing.Point(149, 2);
-            this.bN2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.bN2.Location = new System.Drawing.Point(79, 2);
+            this.bN2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.bN2.Name = "bN2";
-            this.bN2.Size = new System.Drawing.Size(140, 64);
+            this.bN2.Size = new System.Drawing.Size(73, 30);
             this.bN2.TabIndex = 1;
             this.bN2.Text = "2";
             this.bN2.UseVisualStyleBackColor = false;
@@ -1546,10 +1533,10 @@ namespace HızlıSatis
             this.bN3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bN3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.bN3.ForeColor = System.Drawing.Color.White;
-            this.bN3.Location = new System.Drawing.Point(295, 2);
-            this.bN3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.bN3.Location = new System.Drawing.Point(156, 2);
+            this.bN3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.bN3.Name = "bN3";
-            this.bN3.Size = new System.Drawing.Size(140, 64);
+            this.bN3.Size = new System.Drawing.Size(73, 30);
             this.bN3.TabIndex = 2;
             this.bN3.Text = "3";
             this.bN3.UseVisualStyleBackColor = false;
@@ -1563,10 +1550,10 @@ namespace HızlıSatis
             this.bN4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bN4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.bN4.ForeColor = System.Drawing.Color.White;
-            this.bN4.Location = new System.Drawing.Point(3, 70);
-            this.bN4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.bN4.Location = new System.Drawing.Point(2, 36);
+            this.bN4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.bN4.Name = "bN4";
-            this.bN4.Size = new System.Drawing.Size(140, 64);
+            this.bN4.Size = new System.Drawing.Size(73, 30);
             this.bN4.TabIndex = 3;
             this.bN4.Text = "4";
             this.bN4.UseVisualStyleBackColor = false;
@@ -1580,10 +1567,10 @@ namespace HızlıSatis
             this.bN5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bN5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.bN5.ForeColor = System.Drawing.Color.White;
-            this.bN5.Location = new System.Drawing.Point(149, 70);
-            this.bN5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.bN5.Location = new System.Drawing.Point(79, 36);
+            this.bN5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.bN5.Name = "bN5";
-            this.bN5.Size = new System.Drawing.Size(140, 64);
+            this.bN5.Size = new System.Drawing.Size(73, 30);
             this.bN5.TabIndex = 4;
             this.bN5.Text = "5";
             this.bN5.UseVisualStyleBackColor = false;
@@ -1597,10 +1584,10 @@ namespace HızlıSatis
             this.bN6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bN6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.bN6.ForeColor = System.Drawing.Color.White;
-            this.bN6.Location = new System.Drawing.Point(295, 70);
-            this.bN6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.bN6.Location = new System.Drawing.Point(156, 36);
+            this.bN6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.bN6.Name = "bN6";
-            this.bN6.Size = new System.Drawing.Size(140, 64);
+            this.bN6.Size = new System.Drawing.Size(73, 30);
             this.bN6.TabIndex = 5;
             this.bN6.Text = "6";
             this.bN6.UseVisualStyleBackColor = false;
@@ -1614,10 +1601,10 @@ namespace HızlıSatis
             this.bN7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bN7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.bN7.ForeColor = System.Drawing.Color.White;
-            this.bN7.Location = new System.Drawing.Point(3, 138);
-            this.bN7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.bN7.Location = new System.Drawing.Point(2, 70);
+            this.bN7.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.bN7.Name = "bN7";
-            this.bN7.Size = new System.Drawing.Size(140, 64);
+            this.bN7.Size = new System.Drawing.Size(73, 30);
             this.bN7.TabIndex = 6;
             this.bN7.Text = "7";
             this.bN7.UseVisualStyleBackColor = false;
@@ -1631,10 +1618,10 @@ namespace HızlıSatis
             this.bN8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bN8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.bN8.ForeColor = System.Drawing.Color.White;
-            this.bN8.Location = new System.Drawing.Point(149, 138);
-            this.bN8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.bN8.Location = new System.Drawing.Point(79, 70);
+            this.bN8.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.bN8.Name = "bN8";
-            this.bN8.Size = new System.Drawing.Size(140, 64);
+            this.bN8.Size = new System.Drawing.Size(73, 30);
             this.bN8.TabIndex = 7;
             this.bN8.Text = "8";
             this.bN8.UseVisualStyleBackColor = false;
@@ -1648,10 +1635,10 @@ namespace HızlıSatis
             this.bN9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bN9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.bN9.ForeColor = System.Drawing.Color.White;
-            this.bN9.Location = new System.Drawing.Point(295, 138);
-            this.bN9.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.bN9.Location = new System.Drawing.Point(156, 70);
+            this.bN9.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.bN9.Name = "bN9";
-            this.bN9.Size = new System.Drawing.Size(140, 64);
+            this.bN9.Size = new System.Drawing.Size(73, 30);
             this.bN9.TabIndex = 8;
             this.bN9.Text = "9";
             this.bN9.UseVisualStyleBackColor = false;
@@ -1665,10 +1652,10 @@ namespace HızlıSatis
             this.bNB.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bNB.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.bNB.ForeColor = System.Drawing.Color.White;
-            this.bNB.Location = new System.Drawing.Point(3, 206);
-            this.bNB.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.bNB.Location = new System.Drawing.Point(2, 104);
+            this.bNB.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.bNB.Name = "bNB";
-            this.bNB.Size = new System.Drawing.Size(140, 65);
+            this.bNB.Size = new System.Drawing.Size(73, 31);
             this.bNB.TabIndex = 9;
             this.bNB.Text = "<";
             this.bNB.UseVisualStyleBackColor = false;
@@ -1682,10 +1669,10 @@ namespace HızlıSatis
             this.bN0.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bN0.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.bN0.ForeColor = System.Drawing.Color.White;
-            this.bN0.Location = new System.Drawing.Point(149, 206);
-            this.bN0.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.bN0.Location = new System.Drawing.Point(79, 104);
+            this.bN0.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.bN0.Name = "bN0";
-            this.bN0.Size = new System.Drawing.Size(140, 65);
+            this.bN0.Size = new System.Drawing.Size(73, 31);
             this.bN0.TabIndex = 10;
             this.bN0.Text = "0";
             this.bN0.UseVisualStyleBackColor = false;
@@ -1699,10 +1686,10 @@ namespace HızlıSatis
             this.bNV.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bNV.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.bNV.ForeColor = System.Drawing.Color.White;
-            this.bNV.Location = new System.Drawing.Point(295, 206);
-            this.bNV.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.bNV.Location = new System.Drawing.Point(156, 104);
+            this.bNV.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.bNV.Name = "bNV";
-            this.bNV.Size = new System.Drawing.Size(140, 65);
+            this.bNV.Size = new System.Drawing.Size(73, 31);
             this.bNV.TabIndex = 11;
             this.bNV.Text = ",";
             this.bNV.UseVisualStyleBackColor = false;
@@ -1722,15 +1709,14 @@ namespace HızlıSatis
             this.tableLayoutPanel9.Controls.Add(this.button53, 1, 3);
             this.tableLayoutPanel9.Controls.Add(this.bIADE3, 1, 1);
             this.tableLayoutPanel9.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel9.Location = new System.Drawing.Point(719, 4);
-            this.tableLayoutPanel9.Margin = new System.Windows.Forms.Padding(4);
+            this.tableLayoutPanel9.Location = new System.Drawing.Point(381, 3);
             this.tableLayoutPanel9.Name = "tableLayoutPanel9";
             this.tableLayoutPanel9.RowCount = 4;
             this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel9.Size = new System.Drawing.Size(434, 309);
+            this.tableLayoutPanel9.Size = new System.Drawing.Size(228, 167);
             this.tableLayoutPanel9.TabIndex = 2;
             // 
             // bDigerUrun
@@ -1744,7 +1730,7 @@ namespace HızlıSatis
             this.bDigerUrun.Location = new System.Drawing.Point(1, 1);
             this.bDigerUrun.Margin = new System.Windows.Forms.Padding(1);
             this.bDigerUrun.Name = "bDigerUrun";
-            this.bDigerUrun.Size = new System.Drawing.Size(215, 75);
+            this.bDigerUrun.Size = new System.Drawing.Size(112, 39);
             this.bDigerUrun.TabIndex = 0;
             this.bDigerUrun.Text = "Diğer Ürün";
             this.bDigerUrun.UseVisualStyleBackColor = false;
@@ -1758,10 +1744,10 @@ namespace HızlıSatis
             this.bIslemBeklet.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bIslemBeklet.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.bIslemBeklet.ForeColor = System.Drawing.Color.White;
-            this.bIslemBeklet.Location = new System.Drawing.Point(218, 1);
+            this.bIslemBeklet.Location = new System.Drawing.Point(115, 1);
             this.bIslemBeklet.Margin = new System.Windows.Forms.Padding(1);
             this.bIslemBeklet.Name = "bIslemBeklet";
-            this.bIslemBeklet.Size = new System.Drawing.Size(215, 75);
+            this.bIslemBeklet.Size = new System.Drawing.Size(112, 39);
             this.bIslemBeklet.TabIndex = 1;
             this.bIslemBeklet.Text = "İşlem Beklet";
             this.bIslemBeklet.UseVisualStyleBackColor = false;
@@ -1775,10 +1761,10 @@ namespace HızlıSatis
             this.bBarkod.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bBarkod.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.bBarkod.ForeColor = System.Drawing.Color.White;
-            this.bBarkod.Location = new System.Drawing.Point(1, 78);
+            this.bBarkod.Location = new System.Drawing.Point(1, 42);
             this.bBarkod.Margin = new System.Windows.Forms.Padding(1);
             this.bBarkod.Name = "bBarkod";
-            this.bBarkod.Size = new System.Drawing.Size(215, 75);
+            this.bBarkod.Size = new System.Drawing.Size(112, 39);
             this.bBarkod.TabIndex = 2;
             this.bBarkod.Text = "Barkod";
             this.bBarkod.UseVisualStyleBackColor = false;
@@ -1792,10 +1778,10 @@ namespace HızlıSatis
             this.bOdenen.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bOdenen.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.bOdenen.ForeColor = System.Drawing.Color.White;
-            this.bOdenen.Location = new System.Drawing.Point(1, 155);
+            this.bOdenen.Location = new System.Drawing.Point(1, 83);
             this.bOdenen.Margin = new System.Windows.Forms.Padding(1);
             this.bOdenen.Name = "bOdenen";
-            this.bOdenen.Size = new System.Drawing.Size(215, 75);
+            this.bOdenen.Size = new System.Drawing.Size(112, 39);
             this.bOdenen.TabIndex = 4;
             this.bOdenen.Text = "Ödenen";
             this.bOdenen.UseVisualStyleBackColor = false;
@@ -1809,10 +1795,10 @@ namespace HızlıSatis
             this.button51.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button51.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.button51.ForeColor = System.Drawing.Color.White;
-            this.button51.Location = new System.Drawing.Point(218, 155);
+            this.button51.Location = new System.Drawing.Point(115, 83);
             this.button51.Margin = new System.Windows.Forms.Padding(1);
             this.button51.Name = "button51";
-            this.button51.Size = new System.Drawing.Size(215, 75);
+            this.button51.Size = new System.Drawing.Size(112, 39);
             this.button51.TabIndex = 5;
             this.button51.Text = "Fiş Yazdır";
             this.button51.UseVisualStyleBackColor = false;
@@ -1825,10 +1811,10 @@ namespace HızlıSatis
             this.bAdet.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bAdet.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.bAdet.ForeColor = System.Drawing.Color.White;
-            this.bAdet.Location = new System.Drawing.Point(1, 232);
+            this.bAdet.Location = new System.Drawing.Point(1, 124);
             this.bAdet.Margin = new System.Windows.Forms.Padding(1);
             this.bAdet.Name = "bAdet";
-            this.bAdet.Size = new System.Drawing.Size(215, 76);
+            this.bAdet.Size = new System.Drawing.Size(112, 42);
             this.bAdet.TabIndex = 6;
             this.bAdet.Text = "Adet";
             this.bAdet.UseVisualStyleBackColor = false;
@@ -1842,10 +1828,10 @@ namespace HızlıSatis
             this.button53.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button53.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.button53.ForeColor = System.Drawing.Color.White;
-            this.button53.Location = new System.Drawing.Point(218, 232);
+            this.button53.Location = new System.Drawing.Point(115, 124);
             this.button53.Margin = new System.Windows.Forms.Padding(1);
             this.button53.Name = "button53";
-            this.button53.Size = new System.Drawing.Size(215, 76);
+            this.button53.Size = new System.Drawing.Size(112, 42);
             this.button53.TabIndex = 7;
             this.button53.Text = "Temizle";
             this.button53.UseVisualStyleBackColor = false;
@@ -1858,10 +1844,10 @@ namespace HızlıSatis
             this.bIADE3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bIADE3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)), true);
             this.bIADE3.ForeColor = System.Drawing.Color.White;
-            this.bIADE3.Location = new System.Drawing.Point(217, 77);
+            this.bIADE3.Location = new System.Drawing.Point(114, 41);
             this.bIADE3.Margin = new System.Windows.Forms.Padding(0);
             this.bIADE3.Name = "bIADE3";
-            this.bIADE3.Size = new System.Drawing.Size(217, 77);
+            this.bIADE3.Size = new System.Drawing.Size(114, 41);
             this.bIADE3.TabIndex = 8;
             this.bIADE3.Text = "İade";
             this.bIADE3.UseVisualStyleBackColor = false;
@@ -1877,13 +1863,13 @@ namespace HızlıSatis
             // 
             // fSatis
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.ClientSize = new System.Drawing.Size(1701, 772);
+            this.ClientSize = new System.Drawing.Size(1155, 627);
             this.Controls.Add(this.splitContainer1);
             this.KeyPreview = true;
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "fSatis";
             this.Text = "Barkodlu Satış Programı";
             this.Load += new System.EventHandler(this.fSatis_Load);

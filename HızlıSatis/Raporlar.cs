@@ -80,5 +80,90 @@ namespace HızlıSatis
             Cursor.Current = Cursors.Default;
 
         }
+
+        public static void StokRaporu(DataGridView dgv)
+        {
+            Cursor.Current = Cursors.WaitCursor;
+
+            List<Urun> list = new List<Urun>();
+            list.Clear();
+            for (int i = 0; i < dgv.Rows.Count; i++)
+            {
+                list.Add(new Urun
+                {
+                    Barkod = dgv.Rows[i].Cells["Barkod"].Value.ToString(),
+                    UrunAd = dgv.Rows[i].Cells["UrunAd"].Value.ToString(),
+                    UrunGrup = dgv.Rows[i].Cells["UrunGrup"].Value.ToString(),
+                    Birim = dgv.Rows[i].Cells["Birim"].Value.ToString(),
+                    SatisFiyat = Islemler.DoubleYap(dgv.Rows[i].Cells["SatisFiyat"].Value.ToString()),
+                    Miktar = Islemler.DoubleYap(dgv.Rows[i].Cells["Miktar"].Value.ToString()),
+                    Aciklama = dgv.Rows[i].Cells["Aciklama"].Value.ToString(),
+
+                }); ;
+
+            }
+
+            ReportDataSource rs = new ReportDataSource();
+            rs.Name = "dsStokUrun";
+            rs.Value = list;
+
+            fRaporGoster f = new fRaporGoster();
+            f.reportViewer1.LocalReport.DataSources.Clear();
+            f.reportViewer1.LocalReport.DataSources.Add(rs);
+            f.reportViewer1.LocalReport.ReportPath = Application.StartupPath + @"\rpStokUrun.rdlc";
+
+            ReportParameter[] prm = new ReportParameter[2];
+            prm[0] = new ReportParameter("Baslik", Baslik);
+            prm[1] = new ReportParameter("TarihBaslangic", TarihBaslangic);
+            f.reportViewer1.LocalReport.SetParameters(prm);
+            f.reportViewer1.SetDisplayMode(Microsoft.Reporting.WinForms.DisplayMode.PrintLayout);
+            f.reportViewer1.ZoomMode = ZoomMode.PageWidth;
+            f.ShowDialog();
+            Cursor.Current = Cursors.Default;
+
+        }
+
+        public static void StokIzlemeRaporu(DataGridView dgv)
+        {
+            Cursor.Current = Cursors.WaitCursor;
+
+            List<StokHareket> list = new List<StokHareket>();
+            list.Clear();
+            for (int i = 0; i < dgv.Rows.Count; i++)
+            {
+                list.Add(new StokHareket
+                {
+                    Barkod = dgv.Rows[i].Cells["Barkod"].Value.ToString(),
+                    UrunAd = dgv.Rows[i].Cells["UrunAd"].Value.ToString(),
+                    UrunGrup = dgv.Rows[i].Cells["UrunGrup"].Value.ToString(),
+                    Birim = dgv.Rows[i].Cells["Birim"].Value.ToString(),
+                    Miktar = Islemler.DoubleYap(dgv.Rows[i].Cells["Miktar"].Value.ToString()),
+                    Kullanıcı = dgv.Rows[i].Cells["Kullanıcı"].Value.ToString(),
+                    Tarih = Convert.ToDateTime(dgv.Rows[i].Cells["Tarih"].Value.ToString())
+
+                });
+
+            }
+
+            ReportDataSource rs = new ReportDataSource();
+            rs.Name = "dsStokIzleme";
+            rs.Value = list;
+
+            fRaporGoster f = new fRaporGoster();
+            f.reportViewer1.LocalReport.DataSources.Clear();
+            f.reportViewer1.LocalReport.DataSources.Add(rs);
+            f.reportViewer1.LocalReport.ReportPath = Application.StartupPath + @"\rpStokIzleme.rdlc";
+
+            ReportParameter[] prm = new ReportParameter[3];
+            prm[0] = new ReportParameter("Baslik", Baslik);
+            prm[1] = new ReportParameter("TarihBaslangic", TarihBaslangic);
+            prm[2] = new ReportParameter("TarihBitis", TarihBitis);
+            f.reportViewer1.LocalReport.SetParameters(prm);
+            f.reportViewer1.SetDisplayMode(Microsoft.Reporting.WinForms.DisplayMode.PrintLayout);
+            f.reportViewer1.ZoomMode = ZoomMode.PageWidth;
+            f.ShowDialog();
+            Cursor.Current = Cursors.Default;
+
+        }
     }
 }
