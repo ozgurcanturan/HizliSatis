@@ -143,6 +143,16 @@ namespace HızlıSatis.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap cancel242 {
+            get {
+                object obj = ResourceManager.GetObject("cancel242", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap delete {
             get {
                 object obj = ResourceManager.GetObject("delete", resourceCulture);
@@ -276,6 +286,16 @@ namespace HızlıSatis.Properties {
         internal static System.Drawing.Bitmap save24 {
             get {
                 object obj = ResourceManager.GetObject("save24", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap save241 {
+            get {
+                object obj = ResourceManager.GetObject("save241", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

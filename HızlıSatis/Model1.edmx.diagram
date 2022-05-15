@@ -15,6 +15,7 @@
         <EntityTypeShape EntityType="BarkodDbModel.StokHareket" Width="1.5" PointX="6.625" PointY="4.625" />
         <EntityTypeShape EntityType="BarkodDbModel.Sabit" Width="1.5" PointX="8.375" PointY="0.75" />
         <EntityTypeShape EntityType="BarkodDbModel.IslemOzet" Width="1.5" PointX="0.75" PointY="6.75" />
+        <EntityTypeShape EntityType="BarkodDbModel.Kullanici" Width="1.5" PointX="7.375" PointY="8.75" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

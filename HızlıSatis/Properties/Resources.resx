@@ -130,6 +130,9 @@
   <data name="barcode4832" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\barcode4832.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="share (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\share (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="backup4854" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\backup4854.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -151,8 +154,8 @@
   <data name="cancel24" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\cancel24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="cancel241" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\cancel241.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="save24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\save24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="stok4854" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\stok4854.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -162,6 +165,9 @@
   </data>
   <data name="Ara32" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Ara32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cancel242" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cancel242.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="kullanicidegistir32" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\kullanicidegistir32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -174,6 +180,9 @@
   </data>
   <data name="Ekle20" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Ekle20.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fiyatguncelletl48541" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\fiyatguncelletl48541.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="turkish-lira" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\turkish-lira.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -205,16 +214,13 @@
   <data name="remove" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\remove.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="save24" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\save24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="tl_48" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\tl_48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="share (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\share (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="cancel241" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cancel241.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="fiyatguncelletl48541" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\fiyatguncelletl48541.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="save241" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\save241.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

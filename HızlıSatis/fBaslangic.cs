@@ -63,5 +63,11 @@ namespace HızlıSatis
             fFiyatGuncelle f = new fFiyatGuncelle();
             f.ShowDialog();
         }
+
+        private void bAyarlar_Click(object sender, EventArgs e)
+        {
+            fAyarlar f = new fAyarlar();
+            f.ShowDialog();
+        }
     }
 }

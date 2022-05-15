@@ -30,8 +30,6 @@ namespace HızlıSatis
         private void InitializeComponent()
         {
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.lKullanici = new System.Windows.Forms.Label();
-            this.lIsyeri = new System.Windows.Forms.Label();
             this.bCikis = new System.Windows.Forms.Button();
             this.bKullaniciDegistir = new System.Windows.Forms.Button();
             this.bYedekleme = new System.Windows.Forms.Button();
@@ -41,6 +39,8 @@ namespace HızlıSatis
             this.bStok = new System.Windows.Forms.Button();
             this.bGenelRapor = new System.Windows.Forms.Button();
             this.bSatisİslemi = new System.Windows.Forms.Button();
+            this.lKullanici = new System.Windows.Forms.Label();
+            this.lIsyeri = new System.Windows.Forms.Label();
             this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -68,6 +68,166 @@ namespace HızlıSatis
             this.tableLayoutPanel1.Size = new System.Drawing.Size(690, 367);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
+            // bCikis
+            // 
+            this.bCikis.BackColor = System.Drawing.Color.Tomato;
+            this.bCikis.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.bCikis.FlatAppearance.BorderColor = System.Drawing.Color.Tomato;
+            this.bCikis.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bCikis.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.bCikis.ForeColor = System.Drawing.Color.White;
+            this.bCikis.Image = global::HızlıSatis.Properties.Resources.exit4854;
+            this.bCikis.Location = new System.Drawing.Point(463, 247);
+            this.bCikis.Name = "bCikis";
+            this.bCikis.Size = new System.Drawing.Size(224, 117);
+            this.bCikis.TabIndex = 8;
+            this.bCikis.Text = "Çıkış";
+            this.bCikis.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.bCikis.UseVisualStyleBackColor = false;
+            this.bCikis.Click += new System.EventHandler(this.bCikis_Click);
+            // 
+            // bKullaniciDegistir
+            // 
+            this.bKullaniciDegistir.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.bKullaniciDegistir.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.bKullaniciDegistir.FlatAppearance.BorderColor = System.Drawing.SystemColors.MenuHighlight;
+            this.bKullaniciDegistir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bKullaniciDegistir.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.bKullaniciDegistir.ForeColor = System.Drawing.Color.White;
+            this.bKullaniciDegistir.Image = global::HızlıSatis.Properties.Resources.kullanicidegistir32;
+            this.bKullaniciDegistir.Location = new System.Drawing.Point(233, 247);
+            this.bKullaniciDegistir.Name = "bKullaniciDegistir";
+            this.bKullaniciDegistir.Size = new System.Drawing.Size(224, 117);
+            this.bKullaniciDegistir.TabIndex = 7;
+            this.bKullaniciDegistir.Text = "Kullanıcı Değiştir";
+            this.bKullaniciDegistir.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.bKullaniciDegistir.UseVisualStyleBackColor = false;
+            // 
+            // bYedekleme
+            // 
+            this.bYedekleme.BackColor = System.Drawing.Color.DarkGray;
+            this.bYedekleme.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.bYedekleme.FlatAppearance.BorderColor = System.Drawing.Color.DarkGray;
+            this.bYedekleme.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bYedekleme.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.bYedekleme.ForeColor = System.Drawing.Color.White;
+            this.bYedekleme.Image = global::HızlıSatis.Properties.Resources.backup4854;
+            this.bYedekleme.Location = new System.Drawing.Point(3, 247);
+            this.bYedekleme.Name = "bYedekleme";
+            this.bYedekleme.Size = new System.Drawing.Size(224, 117);
+            this.bYedekleme.TabIndex = 6;
+            this.bYedekleme.Text = "Yedekleme";
+            this.bYedekleme.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.bYedekleme.UseVisualStyleBackColor = false;
+            // 
+            // bFiyatGüncelle
+            // 
+            this.bFiyatGüncelle.BackColor = System.Drawing.Color.Firebrick;
+            this.bFiyatGüncelle.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.bFiyatGüncelle.FlatAppearance.BorderColor = System.Drawing.Color.Firebrick;
+            this.bFiyatGüncelle.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bFiyatGüncelle.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.bFiyatGüncelle.ForeColor = System.Drawing.Color.White;
+            this.bFiyatGüncelle.Image = global::HızlıSatis.Properties.Resources.fiyatguncelletl4854;
+            this.bFiyatGüncelle.Location = new System.Drawing.Point(463, 125);
+            this.bFiyatGüncelle.Name = "bFiyatGüncelle";
+            this.bFiyatGüncelle.Size = new System.Drawing.Size(224, 116);
+            this.bFiyatGüncelle.TabIndex = 5;
+            this.bFiyatGüncelle.Text = "Fiyat Güncelle";
+            this.bFiyatGüncelle.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.bFiyatGüncelle.UseVisualStyleBackColor = false;
+            this.bFiyatGüncelle.Click += new System.EventHandler(this.bFiyatGüncelle_Click);
+            // 
+            // bAyarlar
+            // 
+            this.bAyarlar.BackColor = System.Drawing.Color.Sienna;
+            this.bAyarlar.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.bAyarlar.FlatAppearance.BorderColor = System.Drawing.Color.Sienna;
+            this.bAyarlar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bAyarlar.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.bAyarlar.ForeColor = System.Drawing.Color.White;
+            this.bAyarlar.Image = global::HızlıSatis.Properties.Resources.settings4854;
+            this.bAyarlar.Location = new System.Drawing.Point(233, 125);
+            this.bAyarlar.Name = "bAyarlar";
+            this.bAyarlar.Size = new System.Drawing.Size(224, 116);
+            this.bAyarlar.TabIndex = 4;
+            this.bAyarlar.Text = "Ayarlar";
+            this.bAyarlar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.bAyarlar.UseVisualStyleBackColor = false;
+            this.bAyarlar.Click += new System.EventHandler(this.bAyarlar_Click);
+            // 
+            // bUrunGiris
+            // 
+            this.bUrunGiris.BackColor = System.Drawing.Color.DarkGoldenrod;
+            this.bUrunGiris.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.bUrunGiris.FlatAppearance.BorderColor = System.Drawing.Color.DarkGoldenrod;
+            this.bUrunGiris.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bUrunGiris.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.bUrunGiris.ForeColor = System.Drawing.Color.White;
+            this.bUrunGiris.Image = global::HızlıSatis.Properties.Resources.urungiris48541;
+            this.bUrunGiris.Location = new System.Drawing.Point(3, 125);
+            this.bUrunGiris.Name = "bUrunGiris";
+            this.bUrunGiris.Size = new System.Drawing.Size(224, 116);
+            this.bUrunGiris.TabIndex = 3;
+            this.bUrunGiris.Text = "Ürün Giriş";
+            this.bUrunGiris.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.bUrunGiris.UseVisualStyleBackColor = false;
+            this.bUrunGiris.Click += new System.EventHandler(this.bUrunGiris_Click);
+            // 
+            // bStok
+            // 
+            this.bStok.BackColor = System.Drawing.Color.DarkCyan;
+            this.bStok.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.bStok.FlatAppearance.BorderColor = System.Drawing.Color.DarkCyan;
+            this.bStok.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bStok.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.bStok.ForeColor = System.Drawing.Color.White;
+            this.bStok.Image = global::HızlıSatis.Properties.Resources.stok4854;
+            this.bStok.Location = new System.Drawing.Point(463, 3);
+            this.bStok.Name = "bStok";
+            this.bStok.Size = new System.Drawing.Size(224, 116);
+            this.bStok.TabIndex = 2;
+            this.bStok.Text = "Stok Takibi";
+            this.bStok.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.bStok.UseVisualStyleBackColor = false;
+            this.bStok.Click += new System.EventHandler(this.bStok_Click);
+            // 
+            // bGenelRapor
+            // 
+            this.bGenelRapor.BackColor = System.Drawing.Color.ForestGreen;
+            this.bGenelRapor.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.bGenelRapor.FlatAppearance.BorderColor = System.Drawing.Color.ForestGreen;
+            this.bGenelRapor.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bGenelRapor.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.bGenelRapor.ForeColor = System.Drawing.Color.White;
+            this.bGenelRapor.Image = global::HızlıSatis.Properties.Resources.rapor4854;
+            this.bGenelRapor.Location = new System.Drawing.Point(233, 3);
+            this.bGenelRapor.Name = "bGenelRapor";
+            this.bGenelRapor.Size = new System.Drawing.Size(224, 116);
+            this.bGenelRapor.TabIndex = 1;
+            this.bGenelRapor.Text = "Genel Rapor";
+            this.bGenelRapor.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.bGenelRapor.UseVisualStyleBackColor = false;
+            this.bGenelRapor.Click += new System.EventHandler(this.bGenelRapor_Click);
+            // 
+            // bSatisİslemi
+            // 
+            this.bSatisİslemi.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.bSatisİslemi.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.bSatisİslemi.FlatAppearance.BorderColor = System.Drawing.SystemColors.MenuHighlight;
+            this.bSatisİslemi.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bSatisİslemi.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.bSatisİslemi.ForeColor = System.Drawing.Color.White;
+            this.bSatisİslemi.Image = global::HızlıSatis.Properties.Resources.tl4854;
+            this.bSatisİslemi.Location = new System.Drawing.Point(3, 3);
+            this.bSatisİslemi.Name = "bSatisİslemi";
+            this.bSatisİslemi.Size = new System.Drawing.Size(224, 116);
+            this.bSatisİslemi.TabIndex = 0;
+            this.bSatisİslemi.Text = "Satış İşlemi";
+            this.bSatisİslemi.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.bSatisİslemi.UseVisualStyleBackColor = false;
+            this.bSatisİslemi.Click += new System.EventHandler(this.bSatisİslemi_Click);
+            // 
             // lKullanici
             // 
             this.lKullanici.AutoSize = true;
@@ -89,165 +249,6 @@ namespace HızlıSatis
             this.lIsyeri.TabIndex = 1;
             this.lIsyeri.Text = "Kullanıcı";
             this.lIsyeri.Visible = false;
-            // 
-            // bCikis
-            // 
-            this.bCikis.BackColor = System.Drawing.Color.Tomato;
-            this.bCikis.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.bCikis.FlatAppearance.BorderColor = System.Drawing.Color.Tomato;
-            this.bCikis.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bCikis.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.bCikis.ForeColor = System.Drawing.Color.White;
-            this.bCikis.Image = global::HızlıSatis.Properties.Resources.exit4854;
-            this.bCikis.Location = new System.Drawing.Point(461, 247);
-            this.bCikis.Name = "bCikis";
-            this.bCikis.Size = new System.Drawing.Size(226, 117);
-            this.bCikis.TabIndex = 8;
-            this.bCikis.Text = "Çıkış";
-            this.bCikis.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.bCikis.UseVisualStyleBackColor = false;
-            this.bCikis.Click += new System.EventHandler(this.bCikis_Click);
-            // 
-            // bKullaniciDegistir
-            // 
-            this.bKullaniciDegistir.BackColor = System.Drawing.SystemColors.MenuHighlight;
-            this.bKullaniciDegistir.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.bKullaniciDegistir.FlatAppearance.BorderColor = System.Drawing.SystemColors.MenuHighlight;
-            this.bKullaniciDegistir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bKullaniciDegistir.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.bKullaniciDegistir.ForeColor = System.Drawing.Color.White;
-            this.bKullaniciDegistir.Image = global::HızlıSatis.Properties.Resources.kullanicidegistir32;
-            this.bKullaniciDegistir.Location = new System.Drawing.Point(232, 247);
-            this.bKullaniciDegistir.Name = "bKullaniciDegistir";
-            this.bKullaniciDegistir.Size = new System.Drawing.Size(223, 117);
-            this.bKullaniciDegistir.TabIndex = 7;
-            this.bKullaniciDegistir.Text = "Kullanıcı Değiştir";
-            this.bKullaniciDegistir.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.bKullaniciDegistir.UseVisualStyleBackColor = false;
-            // 
-            // bYedekleme
-            // 
-            this.bYedekleme.BackColor = System.Drawing.Color.DarkGray;
-            this.bYedekleme.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.bYedekleme.FlatAppearance.BorderColor = System.Drawing.Color.DarkGray;
-            this.bYedekleme.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bYedekleme.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.bYedekleme.ForeColor = System.Drawing.Color.White;
-            this.bYedekleme.Image = global::HızlıSatis.Properties.Resources.backup4854;
-            this.bYedekleme.Location = new System.Drawing.Point(3, 247);
-            this.bYedekleme.Name = "bYedekleme";
-            this.bYedekleme.Size = new System.Drawing.Size(223, 117);
-            this.bYedekleme.TabIndex = 6;
-            this.bYedekleme.Text = "Yedekleme";
-            this.bYedekleme.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.bYedekleme.UseVisualStyleBackColor = false;
-            // 
-            // bFiyatGüncelle
-            // 
-            this.bFiyatGüncelle.BackColor = System.Drawing.Color.Firebrick;
-            this.bFiyatGüncelle.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.bFiyatGüncelle.FlatAppearance.BorderColor = System.Drawing.Color.Firebrick;
-            this.bFiyatGüncelle.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bFiyatGüncelle.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.bFiyatGüncelle.ForeColor = System.Drawing.Color.White;
-            this.bFiyatGüncelle.Image = global::HızlıSatis.Properties.Resources.fiyatguncelletl4854;
-            this.bFiyatGüncelle.Location = new System.Drawing.Point(461, 125);
-            this.bFiyatGüncelle.Name = "bFiyatGüncelle";
-            this.bFiyatGüncelle.Size = new System.Drawing.Size(226, 116);
-            this.bFiyatGüncelle.TabIndex = 5;
-            this.bFiyatGüncelle.Text = "Fiyat Güncelle";
-            this.bFiyatGüncelle.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.bFiyatGüncelle.UseVisualStyleBackColor = false;
-            this.bFiyatGüncelle.Click += new System.EventHandler(this.bFiyatGüncelle_Click);
-            // 
-            // bAyarlar
-            // 
-            this.bAyarlar.BackColor = System.Drawing.Color.Sienna;
-            this.bAyarlar.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.bAyarlar.FlatAppearance.BorderColor = System.Drawing.Color.Sienna;
-            this.bAyarlar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bAyarlar.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.bAyarlar.ForeColor = System.Drawing.Color.White;
-            this.bAyarlar.Image = global::HızlıSatis.Properties.Resources.settings4854;
-            this.bAyarlar.Location = new System.Drawing.Point(232, 125);
-            this.bAyarlar.Name = "bAyarlar";
-            this.bAyarlar.Size = new System.Drawing.Size(223, 116);
-            this.bAyarlar.TabIndex = 4;
-            this.bAyarlar.Text = "Ayarlar";
-            this.bAyarlar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.bAyarlar.UseVisualStyleBackColor = false;
-            // 
-            // bUrunGiris
-            // 
-            this.bUrunGiris.BackColor = System.Drawing.Color.DarkGoldenrod;
-            this.bUrunGiris.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.bUrunGiris.FlatAppearance.BorderColor = System.Drawing.Color.DarkGoldenrod;
-            this.bUrunGiris.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bUrunGiris.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.bUrunGiris.ForeColor = System.Drawing.Color.White;
-            this.bUrunGiris.Image = global::HızlıSatis.Properties.Resources.urungiris48541;
-            this.bUrunGiris.Location = new System.Drawing.Point(3, 125);
-            this.bUrunGiris.Name = "bUrunGiris";
-            this.bUrunGiris.Size = new System.Drawing.Size(223, 116);
-            this.bUrunGiris.TabIndex = 3;
-            this.bUrunGiris.Text = "Ürün Giriş";
-            this.bUrunGiris.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.bUrunGiris.UseVisualStyleBackColor = false;
-            this.bUrunGiris.Click += new System.EventHandler(this.bUrunGiris_Click);
-            // 
-            // bStok
-            // 
-            this.bStok.BackColor = System.Drawing.Color.DarkCyan;
-            this.bStok.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.bStok.FlatAppearance.BorderColor = System.Drawing.Color.DarkCyan;
-            this.bStok.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bStok.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.bStok.ForeColor = System.Drawing.Color.White;
-            this.bStok.Image = global::HızlıSatis.Properties.Resources.stok4854;
-            this.bStok.Location = new System.Drawing.Point(461, 3);
-            this.bStok.Name = "bStok";
-            this.bStok.Size = new System.Drawing.Size(226, 116);
-            this.bStok.TabIndex = 2;
-            this.bStok.Text = "Stok Takibi";
-            this.bStok.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.bStok.UseVisualStyleBackColor = false;
-            this.bStok.Click += new System.EventHandler(this.bStok_Click);
-            // 
-            // bGenelRapor
-            // 
-            this.bGenelRapor.BackColor = System.Drawing.Color.ForestGreen;
-            this.bGenelRapor.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.bGenelRapor.FlatAppearance.BorderColor = System.Drawing.Color.ForestGreen;
-            this.bGenelRapor.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bGenelRapor.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.bGenelRapor.ForeColor = System.Drawing.Color.White;
-            this.bGenelRapor.Image = global::HızlıSatis.Properties.Resources.rapor4854;
-            this.bGenelRapor.Location = new System.Drawing.Point(232, 3);
-            this.bGenelRapor.Name = "bGenelRapor";
-            this.bGenelRapor.Size = new System.Drawing.Size(223, 116);
-            this.bGenelRapor.TabIndex = 1;
-            this.bGenelRapor.Text = "Genel Rapor";
-            this.bGenelRapor.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.bGenelRapor.UseVisualStyleBackColor = false;
-            this.bGenelRapor.Click += new System.EventHandler(this.bGenelRapor_Click);
-            // 
-            // bSatisİslemi
-            // 
-            this.bSatisİslemi.BackColor = System.Drawing.SystemColors.MenuHighlight;
-            this.bSatisİslemi.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.bSatisİslemi.FlatAppearance.BorderColor = System.Drawing.SystemColors.MenuHighlight;
-            this.bSatisİslemi.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bSatisİslemi.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.bSatisİslemi.ForeColor = System.Drawing.Color.White;
-            this.bSatisİslemi.Image = global::HızlıSatis.Properties.Resources.tl4854;
-            this.bSatisİslemi.Location = new System.Drawing.Point(3, 3);
-            this.bSatisİslemi.Name = "bSatisİslemi";
-            this.bSatisİslemi.Size = new System.Drawing.Size(223, 116);
-            this.bSatisİslemi.TabIndex = 0;
-            this.bSatisİslemi.Text = "Satış İşlemi";
-            this.bSatisİslemi.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.bSatisİslemi.UseVisualStyleBackColor = false;
-            this.bSatisİslemi.Click += new System.EventHandler(this.bSatisİslemi_Click);
             // 
             // fBaslangic
             // 
