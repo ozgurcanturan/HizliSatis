@@ -142,6 +142,9 @@
   <data name="ara3232" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ara3232.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="exit4854" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\exit4854.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="tlBeyaz32" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\tlBeyaz32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -211,7 +214,7 @@
   <data name="share (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\share (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="exit4854" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\exit4854.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="fiyatguncelletl48541" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\fiyatguncelletl48541.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

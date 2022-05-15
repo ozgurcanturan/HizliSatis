@@ -30,6 +30,8 @@ namespace HızlıSatis
         private void InitializeComponent()
         {
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.lKullanici = new System.Windows.Forms.Label();
+            this.lIsyeri = new System.Windows.Forms.Label();
             this.bCikis = new System.Windows.Forms.Button();
             this.bKullaniciDegistir = new System.Windows.Forms.Button();
             this.bYedekleme = new System.Windows.Forms.Button();
@@ -39,7 +41,6 @@ namespace HızlıSatis
             this.bStok = new System.Windows.Forms.Button();
             this.bGenelRapor = new System.Windows.Forms.Button();
             this.bSatisİslemi = new System.Windows.Forms.Button();
-            this.lKullanici = new System.Windows.Forms.Label();
             this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -66,6 +67,28 @@ namespace HızlıSatis
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(690, 367);
             this.tableLayoutPanel1.TabIndex = 0;
+            // 
+            // lKullanici
+            // 
+            this.lKullanici.AutoSize = true;
+            this.lKullanici.ForeColor = System.Drawing.Color.White;
+            this.lKullanici.Location = new System.Drawing.Point(76, 459);
+            this.lKullanici.Name = "lKullanici";
+            this.lKullanici.Size = new System.Drawing.Size(54, 15);
+            this.lKullanici.TabIndex = 1;
+            this.lKullanici.Text = "Kullanıcı";
+            this.lKullanici.Visible = false;
+            // 
+            // lIsyeri
+            // 
+            this.lIsyeri.AutoSize = true;
+            this.lIsyeri.ForeColor = System.Drawing.Color.White;
+            this.lIsyeri.Location = new System.Drawing.Point(76, 21);
+            this.lIsyeri.Name = "lIsyeri";
+            this.lIsyeri.Size = new System.Drawing.Size(54, 15);
+            this.lIsyeri.TabIndex = 1;
+            this.lIsyeri.Text = "Kullanıcı";
+            this.lIsyeri.Visible = false;
             // 
             // bCikis
             // 
@@ -135,6 +158,7 @@ namespace HızlıSatis
             this.bFiyatGüncelle.Text = "Fiyat Güncelle";
             this.bFiyatGüncelle.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.bFiyatGüncelle.UseVisualStyleBackColor = false;
+            this.bFiyatGüncelle.Click += new System.EventHandler(this.bFiyatGüncelle_Click);
             // 
             // bAyarlar
             // 
@@ -225,27 +249,18 @@ namespace HızlıSatis
             this.bSatisİslemi.UseVisualStyleBackColor = false;
             this.bSatisİslemi.Click += new System.EventHandler(this.bSatisİslemi_Click);
             // 
-            // lKullanici
-            // 
-            this.lKullanici.AutoSize = true;
-            this.lKullanici.Location = new System.Drawing.Point(127, 456);
-            this.lKullanici.Name = "lKullanici";
-            this.lKullanici.Size = new System.Drawing.Size(41, 15);
-            this.lKullanici.TabIndex = 1;
-            this.lKullanici.Text = "label1";
-            this.lKullanici.Visible = false;
-            // 
             // fBaslangic
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
-            this.ClientSize = new System.Drawing.Size(854, 481);
+            this.ClientSize = new System.Drawing.Size(874, 524);
             this.ControlBox = false;
+            this.Controls.Add(this.lIsyeri);
             this.Controls.Add(this.lKullanici);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MaximizeBox = false;
             this.MaximumSize = new System.Drawing.Size(874, 524);
             this.MinimumSize = new System.Drawing.Size(874, 524);
@@ -272,5 +287,6 @@ namespace HızlıSatis
         private System.Windows.Forms.Button bStok;
         private System.Windows.Forms.Button bGenelRapor;
         private System.Windows.Forms.Label lKullanici;
+        private System.Windows.Forms.Label lIsyeri;
     }
 }

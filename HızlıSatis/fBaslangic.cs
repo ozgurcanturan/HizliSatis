@@ -57,5 +57,11 @@ namespace HızlıSatis
         {
             Application.Exit();
         }
+
+        private void bFiyatGüncelle_Click(object sender, EventArgs e)
+        {
+            fFiyatGuncelle f = new fFiyatGuncelle();
+            f.ShowDialog();
+        }
     }
 }
