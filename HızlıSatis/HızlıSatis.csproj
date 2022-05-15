@@ -91,6 +91,12 @@
     <Compile Include="Barkod.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
+    <Compile Include="fBaslangic.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fBaslangic.Designer.cs">
+      <DependentUpon>fBaslangic.cs</DependentUpon>
+    </Compile>
     <Compile Include="fDetayGoster.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -199,6 +205,9 @@
     <Compile Include="UrunGrup.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="fBaslangic.resx">
+      <DependentUpon>fBaslangic.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="fDetayGoster.resx">
       <DependentUpon>fDetayGoster.cs</DependentUpon>
     </EmbeddedResource>
@@ -306,6 +315,19 @@
       <LastGenOutput>Model1.cs</LastGenOutput>
     </Content>
     <None Include="Resources\Ara321.png" />
+    <None Include="Resources\tl_32_b.jpg" />
+    <None Include="Resources\urungiris4854.png" />
+    <None Include="Resources\tlBeyaz32.png" />
+    <None Include="Resources\rapor4854.png" />
+    <None Include="Resources\stok4854.png" />
+    <None Include="Resources\tl4854.png" />
+    <None Include="Resources\satisyap4854.png" />
+    <None Include="Resources\urungiris48541.png" />
+    <None Include="Resources\settings4854.png" />
+    <None Include="Resources\fiyatguncelletl4854.png" />
+    <None Include="Resources\backup4854.png" />
+    <None Include="Resources\kullanicidegistir32.png" />
+    <None Include="Resources\exit4854.png" />
     <Content Include="SqlServerTypes\readme.htm" />
     <Content Include="SqlServerTypes\x64\msvcr120.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>

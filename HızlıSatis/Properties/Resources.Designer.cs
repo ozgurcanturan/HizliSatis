@@ -103,6 +103,16 @@ namespace HızlıSatis.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap backup4854 {
+            get {
+                object obj = ResourceManager.GetObject("backup4854", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap barcode4832 {
             get {
                 object obj = ResourceManager.GetObject("barcode4832", resourceCulture);
@@ -163,6 +173,26 @@ namespace HızlıSatis.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap exit4854 {
+            get {
+                object obj = ResourceManager.GetObject("exit4854", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap fiyatguncelletl4854 {
+            get {
+                object obj = ResourceManager.GetObject("fiyatguncelletl4854", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap kartnakit {
             get {
                 object obj = ResourceManager.GetObject("kartnakit", resourceCulture);
@@ -176,6 +206,26 @@ namespace HızlıSatis.Properties {
         internal static System.Drawing.Bitmap kredikarti {
             get {
                 object obj = ResourceManager.GetObject("kredikarti", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap kullanicidegistir32 {
+            get {
+                object obj = ResourceManager.GetObject("kullanicidegistir32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap rapor4854 {
+            get {
+                object obj = ResourceManager.GetObject("rapor4854", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -203,9 +253,29 @@ namespace HızlıSatis.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap satisyap4854 {
+            get {
+                object obj = ResourceManager.GetObject("satisyap4854", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap save24 {
             get {
                 object obj = ResourceManager.GetObject("save24", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap settings4854 {
+            get {
+                object obj = ResourceManager.GetObject("settings4854", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -233,6 +303,26 @@ namespace HızlıSatis.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap stok4854 {
+            get {
+                object obj = ResourceManager.GetObject("stok4854", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap tl_32_b {
+            get {
+                object obj = ResourceManager.GetObject("tl_32_b", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap tl_48 {
             get {
                 object obj = ResourceManager.GetObject("tl_48", resourceCulture);
@@ -243,9 +333,49 @@ namespace HızlıSatis.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap tl4854 {
+            get {
+                object obj = ResourceManager.GetObject("tl4854", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap tlBeyaz32 {
+            get {
+                object obj = ResourceManager.GetObject("tlBeyaz32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap turkish_lira {
             get {
                 object obj = ResourceManager.GetObject("turkish-lira", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap urungiris4854 {
+            get {
+                object obj = ResourceManager.GetObject("urungiris4854", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap urungiris48541 {
+            get {
+                object obj = ResourceManager.GetObject("urungiris48541", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
