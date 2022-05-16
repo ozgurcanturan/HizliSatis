@@ -353,6 +353,7 @@
     <None Include="Resources\fiyatguncelletl48541.png" />
     <None Include="Resources\cancel242.png" />
     <None Include="Resources\save241.png" />
+    <None Include="Resources\restore4854.png" />
     <Content Include="SqlServerTypes\readme.htm" />
     <Content Include="SqlServerTypes\x64\msvcr120.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>

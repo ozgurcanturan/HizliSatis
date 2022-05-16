@@ -69,5 +69,10 @@ namespace HızlıSatis
             fAyarlar f = new fAyarlar();
             f.ShowDialog();
         }
+
+        private void bYedekleme_Click(object sender, EventArgs e)
+        {
+            Islemler.Backup();
+        }
     }
 }

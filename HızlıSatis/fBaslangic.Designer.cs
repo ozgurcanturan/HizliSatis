@@ -119,6 +119,7 @@ namespace HızlıSatis
             this.bYedekleme.Text = "Yedekleme";
             this.bYedekleme.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.bYedekleme.UseVisualStyleBackColor = false;
+            this.bYedekleme.Click += new System.EventHandler(this.bYedekleme_Click);
             // 
             // bFiyatGüncelle
             // 
