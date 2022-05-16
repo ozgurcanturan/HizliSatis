@@ -140,6 +140,11 @@ namespace HızlıSatis
             b200.Text = 200.ToString("C2");
             tGenelToplam.Text = 0.ToString("C2");
             tParaUstu.Text = 0.ToString("C2");
+            using (var db=new BarkodDbEntities())
+            {
+                var sabit = db.Sabit.FirstOrDefault();
+                chYazdirmaDurumu.Checked = Convert.ToBoolean(sabit.Yazici);
+            }
         }
         private void HizliButonDoldur()
         {
@@ -417,8 +422,13 @@ namespace HızlıSatis
                 var islemnoartir = db.Islem.First();
                 islemnoartir.IslemNo += 1;
                 db.SaveChanges();
+                if (!chYazdirmaDurumu.Checked)
+                {
+                    Yazdir yazdir = new Yazdir(islemno);
+                    yazdir.YazdirmayaBasla();
+                }
                 Temizle();
-                MessageBox.Show("Yazdırma İşlemi");
+                
             }
         }
 
