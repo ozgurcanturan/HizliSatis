@@ -114,7 +114,7 @@ namespace HızlıSatis
                             dgv.Columns[i].HeaderText = "Alış Fiyat Toplam";
                             dgv.Columns[i].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
                             dgv.Columns[i].DefaultCellStyle.Format = "C2"; break;
-                            
+
                         case "Toplam":
                             dgv.Columns[i].DefaultCellStyle.Format = "C2"; break;
 
@@ -144,19 +144,40 @@ namespace HızlıSatis
         public static int KartKomisyon()
         {
             int sonuc = 0;
-            using (var db=new BarkodDbEntities())
+            using (var db = new BarkodDbEntities())
             {
                 if (db.Sabit.Any())
                 {
-                    sonuc = Convert.ToInt16( db.Sabit.First().KartKomisyon);
+                    sonuc = Convert.ToInt16(db.Sabit.First().KartKomisyon);
                 }
                 else
                 {
                     sonuc = 0;
                 }
-                
+
             }
             return sonuc;
+        }
+
+        public static void SabitVarsayilan()
+        {
+            using (var db = new BarkodDbEntities())
+            {
+                if (!db.Sabit.Any())
+                {
+                    Sabit s = new Sabit();
+                    s.KartKomisyon = 0;
+                    s.Yazici = false;
+                    s.Adres = "admin";
+                    s.Unvan = "admin";
+                    s.Telefon = "(123) 456-7890";
+                    s.Eposta = "admin";
+                    s.AdSoyad = "admin";
+                    db.Sabit.Add(s);
+                    db.SaveChanges();
+                }
+
+            }
         }
     }
 }

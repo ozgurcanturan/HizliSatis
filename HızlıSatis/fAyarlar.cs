@@ -94,11 +94,10 @@ namespace HızlıSatis
                             guncelle.Ayarlar = chAyarlar.Checked;
                             guncelle.FiyatGuncelle = chFiyatGuncelle.Checked;
                             guncelle.Yedekleme = chYedekleme.Checked;
-                            db.Kullanici.Add(guncelle);
                             db.SaveChanges();
-                            gridListeKullanici.DataSource = db.Kullanici.Select(x => new { x.AdSoyad, x.KullaniciAd, x.Telefon, x.EPosta }).ToList();
                             Temizle();
                             MessageBox.Show("Kullanıcı Bilgileri Güncellenmiştir");
+                            bKaydet.Text = "Kaydet";
                         }
                     }
                     else
@@ -128,7 +127,7 @@ namespace HızlıSatis
             chAyarlar.Checked = false;
             chFiyatGuncelle.Checked = false;
             chYedekleme.Checked = false;
-            Liste();
+            Doldur();
             tAdSoyad.Focus();
         }
 
@@ -161,16 +160,165 @@ namespace HızlıSatis
 
         private void fAyarlar_Load(object sender, EventArgs e)
         {
-            Liste();
+            Cursor.Current = Cursors.WaitCursor;
+            Doldur();
+            Cursor.Current = Cursors.Default;
         }
 
-        private void Liste()
+        private void Doldur()
         {
             using (var db = new BarkodDbEntities())
             {
-                gridListeKullanici.DataSource = db.Kullanici.Select(x => new { x.AdSoyad, x.KullaniciAd, x.Telefon, x.EPosta }).ToList();
+                if (db.Kullanici.Any())
+                {
+                    gridListeKullanici.DataSource = db.Kullanici.Select(x => new { x.Id, x.AdSoyad, x.KullaniciAd, x.Telefon, x.EPosta }).ToList();
+
+                }
+                Islemler.SabitVarsayilan();
+                var yazici = db.Sabit.FirstOrDefault();
+                chYazmaDurumu.Checked = (bool)yazici.Yazici;
+
+                var sabitler = db.Sabit.FirstOrDefault();
+                tKartKomisyon.Text = sabitler.KartKomisyon.ToString();
+
+                var terazionek = db.Terazi.ToList();
+                cmberaziOnEk.DisplayMember = "TeraziOnEk";
+                cmberaziOnEk.ValueMember = "Id";
+                cmberaziOnEk.DataSource = terazionek;
+
+                tIsyeriAdSoyad.Text = sabitler.AdSoyad;
+                tIsyeriUnvan.Text = sabitler.Unvan;
+                tIsyeriAdres.Text = sabitler.Adres;
+                tIsyeriTelefon.Text = sabitler.Telefon;
+                tIsyeriEposta.Text = sabitler.Eposta;
             }
         }
 
+        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        {
+            using (var db = new BarkodDbEntities())
+            {
+                if (chYazmaDurumu.Checked)
+                {
+
+                    Islemler.SabitVarsayilan();
+                    var ayarla = db.Sabit.FirstOrDefault();
+                    ayarla.Yazici = true;
+                    db.SaveChanges();
+                    chYazmaDurumu.Text = "Yazma Durumu AKTİF";
+
+                }
+                else
+                {
+                    Islemler.SabitVarsayilan();
+                    var ayarla = db.Sabit.FirstOrDefault();
+                    ayarla.Yazici = false;
+                    db.SaveChanges();
+                    chYazmaDurumu.Text = "Yazma Durumu PASİF";
+                }
+            }
+        }
+
+        private void bKartKomisyonAyarla_Click(object sender, EventArgs e)
+        {
+            if (tKartKomisyon.Text != "")
+            {
+                using (var db = new BarkodDbEntities())
+                {
+                    var sabit = db.Sabit.FirstOrDefault();
+                    sabit.KartKomisyon = Convert.ToInt16(tKartKomisyon.Text);
+                    db.SaveChanges();
+                    MessageBox.Show("Kart Komisyon Güncellendi");
+                }
+            }
+            else
+            {
+                MessageBox.Show("Kart Komisyon Giriniz.");
+            }
+
+
+        }
+
+        private void bTeraziOnEkKaydet_Click(object sender, EventArgs e)
+        {
+            if (tTeraziOnEk.Text != "")
+            {
+                int onek = Convert.ToInt16(tTeraziOnEk.Text);
+                using (var db = new BarkodDbEntities())
+                {
+                    if (db.Terazi.Any(x => x.TeraziOnEk == onek))
+                    {
+                        MessageBox.Show(onek.ToString() + " zaten kayıtlı");
+                    }
+                    else
+                    {
+                        Terazi t = new Terazi();
+                        t.TeraziOnEk = onek;
+                        db.Terazi.Add(t);
+                        db.SaveChanges();
+                        MessageBox.Show("ÖnEk Eklenmiştir.");
+                        cmberaziOnEk.DisplayMember = "TeraziOnEk";
+                        cmberaziOnEk.ValueMember = "Id";
+                        cmberaziOnEk.DataSource = db.Terazi.ToList();
+                        tTeraziOnEk.Clear();
+                    }
+                }
+            }
+            else
+            {
+                MessageBox.Show("Ön Ek Bilgilerini giriniz.");
+            }
+        }
+
+        private void bTeraziOnEkSil_Click(object sender, EventArgs e)
+        {
+            if (cmberaziOnEk.Text != "")
+            {
+                int onekid = Convert.ToInt16(cmberaziOnEk.SelectedValue);
+                DialogResult onay = MessageBox.Show(cmberaziOnEk.Text + " ön eki silmek istiyor musunuz?", "Terazi Önek Silme İşlemi", MessageBoxButtons.YesNo);
+                if (onay == DialogResult.Yes)
+                {
+                    using (var db = new BarkodDbEntities())
+                    {
+                        var onek = db.Terazi.Find(onekid);
+                        db.Terazi.Remove(onek);
+                        db.SaveChanges();
+                        cmberaziOnEk.DisplayMember = "TeraziOnEk";
+                        cmberaziOnEk.ValueMember = "Id";
+                        cmberaziOnEk.DataSource = db.Terazi.ToList();
+                        MessageBox.Show("Ön Ek Silinmiştir.");
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("Silmek İçin Bir Ön Ek Seçiniz");
+                }
+            }
+        }
+
+        private void bIsyeriKaydet_Click(object sender, EventArgs e)
+        {
+            if (tIsyeriAdSoyad.Text != "" && tIsyeriUnvan.Text != "" && tIsyeriAdres.Text != "" && tIsyeriEposta.Text != "" && tIsyeriTelefon.Text != "")
+            {
+                using (var db = new BarkodDbEntities())
+                {
+                    var isyeri = db.Sabit.FirstOrDefault();
+                    isyeri.AdSoyad = tIsyeriAdSoyad.Text;
+                    isyeri.Unvan = tIsyeriUnvan.Text;
+                    isyeri.Adres = tIsyeriAdres.Text;
+                    isyeri.Telefon = tIsyeriTelefon.Text;
+                    isyeri.Eposta = tIsyeriEposta.Text;
+                    db.SaveChanges();
+                    MessageBox.Show("Değişiklikler kaydedilmiştir");
+
+                }
+            }
+            else
+            {
+                MessageBox.Show("işyeri Bilgilerini Kontrol Ediniz.");
+            }
+        }
+
+            
     }
 }
