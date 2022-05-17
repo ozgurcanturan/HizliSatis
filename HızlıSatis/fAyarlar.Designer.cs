@@ -44,6 +44,8 @@ namespace HızlıSatis
             this.chUrunGiris = new System.Windows.Forms.CheckBox();
             this.chRapor = new System.Windows.Forms.CheckBox();
             this.chSatisEkrani = new System.Windows.Forms.CheckBox();
+            this.bKaydet = new HızlıSatis.bStandart();
+            this.bIptal = new HızlıSatis.bStandart();
             this.mtTelefon = new System.Windows.Forms.MaskedTextBox();
             this.lStandart3 = new HızlıSatis.lStandart();
             this.tSifreTekrar = new HızlıSatis.tStandart();
@@ -76,21 +78,19 @@ namespace HızlıSatis
             this.lStandart10 = new HızlıSatis.lStandart();
             this.panel3 = new System.Windows.Forms.Panel();
             this.tTeraziOnEk = new HızlıSatis.tNumeric();
+            this.bTeraziOnEkSil = new HızlıSatis.bStandart();
+            this.bTeraziOnEkKaydet = new HızlıSatis.bStandart();
             this.cmberaziOnEk = new System.Windows.Forms.ComboBox();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.bKartKomisyonAyarla = new HızlıSatis.bStandart();
             this.tKartKomisyon = new HızlıSatis.tNumeric();
             this.panel1 = new System.Windows.Forms.Panel();
             this.chYazmaDurumu = new System.Windows.Forms.CheckBox();
             this.lStandart9 = new HızlıSatis.lStandart();
-            this.tabPage3 = new System.Windows.Forms.TabPage();
-            this.bKaydet = new HızlıSatis.bStandart();
-            this.bIptal = new HızlıSatis.bStandart();
             this.bIsyeriKaydet = new HızlıSatis.bStandart();
-            this.bTeraziOnEkSil = new HızlıSatis.bStandart();
-            this.bTeraziOnEkKaydet = new HızlıSatis.bStandart();
-            this.bKartKomisyonAyarla = new HızlıSatis.bStandart();
-            this.bStandart1 = new HızlıSatis.bStandart();
+            this.tabPage3 = new System.Windows.Forms.TabPage();
             this.lStandart1 = new HızlıSatis.lStandart();
+            this.bStandart1 = new HızlıSatis.bStandart();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
@@ -271,6 +271,41 @@ namespace HızlıSatis
             this.chSatisEkrani.TabIndex = 7;
             this.chSatisEkrani.Text = "Satış Ekranı";
             this.chSatisEkrani.UseVisualStyleBackColor = true;
+            // 
+            // bKaydet
+            // 
+            this.bKaydet.BackColor = System.Drawing.Color.Tomato;
+            this.bKaydet.FlatAppearance.BorderColor = System.Drawing.Color.Tomato;
+            this.bKaydet.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bKaydet.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.bKaydet.ForeColor = System.Drawing.Color.White;
+            this.bKaydet.Image = global::HızlıSatis.Properties.Resources.save24;
+            this.bKaydet.Location = new System.Drawing.Point(518, 22);
+            this.bKaydet.Margin = new System.Windows.Forms.Padding(1);
+            this.bKaydet.Name = "bKaydet";
+            this.bKaydet.Size = new System.Drawing.Size(83, 65);
+            this.bKaydet.TabIndex = 15;
+            this.bKaydet.Text = "Kaydet";
+            this.bKaydet.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.bKaydet.UseVisualStyleBackColor = false;
+            this.bKaydet.Click += new System.EventHandler(this.bKaydet_Click);
+            // 
+            // bIptal
+            // 
+            this.bIptal.BackColor = System.Drawing.Color.DimGray;
+            this.bIptal.FlatAppearance.BorderColor = System.Drawing.Color.DarkGray;
+            this.bIptal.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bIptal.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.bIptal.ForeColor = System.Drawing.Color.White;
+            this.bIptal.Image = global::HızlıSatis.Properties.Resources.cancel242;
+            this.bIptal.Location = new System.Drawing.Point(518, 103);
+            this.bIptal.Margin = new System.Windows.Forms.Padding(1);
+            this.bIptal.Name = "bIptal";
+            this.bIptal.Size = new System.Drawing.Size(83, 65);
+            this.bIptal.TabIndex = 14;
+            this.bIptal.Text = "İptal";
+            this.bIptal.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.bIptal.UseVisualStyleBackColor = false;
             // 
             // mtTelefon
             // 
@@ -646,6 +681,42 @@ namespace HızlıSatis
             this.tTeraziOnEk.TabIndex = 5;
             this.tTeraziOnEk.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
+            // bTeraziOnEkSil
+            // 
+            this.bTeraziOnEkSil.BackColor = System.Drawing.Color.IndianRed;
+            this.bTeraziOnEkSil.FlatAppearance.BorderColor = System.Drawing.Color.IndianRed;
+            this.bTeraziOnEkSil.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bTeraziOnEkSil.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.bTeraziOnEkSil.ForeColor = System.Drawing.Color.White;
+            this.bTeraziOnEkSil.Image = global::HızlıSatis.Properties.Resources.cancel24;
+            this.bTeraziOnEkSil.Location = new System.Drawing.Point(129, 6);
+            this.bTeraziOnEkSil.Margin = new System.Windows.Forms.Padding(1);
+            this.bTeraziOnEkSil.Name = "bTeraziOnEkSil";
+            this.bTeraziOnEkSil.Size = new System.Drawing.Size(54, 39);
+            this.bTeraziOnEkSil.TabIndex = 4;
+            this.bTeraziOnEkSil.Text = " ";
+            this.bTeraziOnEkSil.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.bTeraziOnEkSil.UseVisualStyleBackColor = false;
+            this.bTeraziOnEkSil.Click += new System.EventHandler(this.bTeraziOnEkSil_Click);
+            // 
+            // bTeraziOnEkKaydet
+            // 
+            this.bTeraziOnEkKaydet.BackColor = System.Drawing.Color.GreenYellow;
+            this.bTeraziOnEkKaydet.FlatAppearance.BorderColor = System.Drawing.Color.GreenYellow;
+            this.bTeraziOnEkKaydet.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bTeraziOnEkKaydet.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.bTeraziOnEkKaydet.ForeColor = System.Drawing.Color.White;
+            this.bTeraziOnEkKaydet.Image = global::HızlıSatis.Properties.Resources.save24;
+            this.bTeraziOnEkKaydet.Location = new System.Drawing.Point(129, 54);
+            this.bTeraziOnEkKaydet.Margin = new System.Windows.Forms.Padding(1);
+            this.bTeraziOnEkKaydet.Name = "bTeraziOnEkKaydet";
+            this.bTeraziOnEkKaydet.Size = new System.Drawing.Size(54, 39);
+            this.bTeraziOnEkKaydet.TabIndex = 6;
+            this.bTeraziOnEkKaydet.Text = " ";
+            this.bTeraziOnEkKaydet.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.bTeraziOnEkKaydet.UseVisualStyleBackColor = false;
+            this.bTeraziOnEkKaydet.Click += new System.EventHandler(this.bTeraziOnEkKaydet_Click);
+            // 
             // cmberaziOnEk
             // 
             this.cmberaziOnEk.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
@@ -664,6 +735,24 @@ namespace HızlıSatis
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(185, 124);
             this.panel2.TabIndex = 2;
+            // 
+            // bKartKomisyonAyarla
+            // 
+            this.bKartKomisyonAyarla.BackColor = System.Drawing.Color.GreenYellow;
+            this.bKartKomisyonAyarla.FlatAppearance.BorderColor = System.Drawing.Color.GreenYellow;
+            this.bKartKomisyonAyarla.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bKartKomisyonAyarla.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.bKartKomisyonAyarla.ForeColor = System.Drawing.Color.White;
+            this.bKartKomisyonAyarla.Image = global::HızlıSatis.Properties.Resources.save24;
+            this.bKartKomisyonAyarla.Location = new System.Drawing.Point(123, 3);
+            this.bKartKomisyonAyarla.Margin = new System.Windows.Forms.Padding(1);
+            this.bKartKomisyonAyarla.Name = "bKartKomisyonAyarla";
+            this.bKartKomisyonAyarla.Size = new System.Drawing.Size(54, 39);
+            this.bKartKomisyonAyarla.TabIndex = 2;
+            this.bKartKomisyonAyarla.Text = " ";
+            this.bKartKomisyonAyarla.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.bKartKomisyonAyarla.UseVisualStyleBackColor = false;
+            this.bKartKomisyonAyarla.Click += new System.EventHandler(this.bKartKomisyonAyarla_Click);
             // 
             // tKartKomisyon
             // 
@@ -712,53 +801,6 @@ namespace HızlıSatis
             this.lStandart9.TabIndex = 1;
             this.lStandart9.Text = "Yazıcı Ayarları";
             // 
-            // tabPage3
-            // 
-            this.tabPage3.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.tabPage3.Controls.Add(this.lStandart1);
-            this.tabPage3.Controls.Add(this.bStandart1);
-            this.tabPage3.Location = new System.Drawing.Point(4, 24);
-            this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(616, 491);
-            this.tabPage3.TabIndex = 2;
-            this.tabPage3.Text = "YEDEK YÜKLEME";
-            // 
-            // bKaydet
-            // 
-            this.bKaydet.BackColor = System.Drawing.Color.Tomato;
-            this.bKaydet.FlatAppearance.BorderColor = System.Drawing.Color.Tomato;
-            this.bKaydet.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bKaydet.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.bKaydet.ForeColor = System.Drawing.Color.White;
-            this.bKaydet.Image = global::HızlıSatis.Properties.Resources.save24;
-            this.bKaydet.Location = new System.Drawing.Point(518, 22);
-            this.bKaydet.Margin = new System.Windows.Forms.Padding(1);
-            this.bKaydet.Name = "bKaydet";
-            this.bKaydet.Size = new System.Drawing.Size(83, 65);
-            this.bKaydet.TabIndex = 15;
-            this.bKaydet.Text = "Kaydet";
-            this.bKaydet.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.bKaydet.UseVisualStyleBackColor = false;
-            this.bKaydet.Click += new System.EventHandler(this.bKaydet_Click);
-            // 
-            // bIptal
-            // 
-            this.bIptal.BackColor = System.Drawing.Color.DimGray;
-            this.bIptal.FlatAppearance.BorderColor = System.Drawing.Color.DarkGray;
-            this.bIptal.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bIptal.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.bIptal.ForeColor = System.Drawing.Color.White;
-            this.bIptal.Image = global::HızlıSatis.Properties.Resources.cancel242;
-            this.bIptal.Location = new System.Drawing.Point(518, 103);
-            this.bIptal.Margin = new System.Windows.Forms.Padding(1);
-            this.bIptal.Name = "bIptal";
-            this.bIptal.Size = new System.Drawing.Size(83, 65);
-            this.bIptal.TabIndex = 14;
-            this.bIptal.Text = "İptal";
-            this.bIptal.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.bIptal.UseVisualStyleBackColor = false;
-            // 
             // bIsyeriKaydet
             // 
             this.bIsyeriKaydet.BackColor = System.Drawing.Color.Tomato;
@@ -777,59 +819,29 @@ namespace HızlıSatis
             this.bIsyeriKaydet.UseVisualStyleBackColor = false;
             this.bIsyeriKaydet.Click += new System.EventHandler(this.bIsyeriKaydet_Click);
             // 
-            // bTeraziOnEkSil
+            // tabPage3
             // 
-            this.bTeraziOnEkSil.BackColor = System.Drawing.Color.IndianRed;
-            this.bTeraziOnEkSil.FlatAppearance.BorderColor = System.Drawing.Color.IndianRed;
-            this.bTeraziOnEkSil.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bTeraziOnEkSil.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.bTeraziOnEkSil.ForeColor = System.Drawing.Color.White;
-            this.bTeraziOnEkSil.Image = global::HızlıSatis.Properties.Resources.cancel24;
-            this.bTeraziOnEkSil.Location = new System.Drawing.Point(129, 6);
-            this.bTeraziOnEkSil.Margin = new System.Windows.Forms.Padding(1);
-            this.bTeraziOnEkSil.Name = "bTeraziOnEkSil";
-            this.bTeraziOnEkSil.Size = new System.Drawing.Size(54, 39);
-            this.bTeraziOnEkSil.TabIndex = 4;
-            this.bTeraziOnEkSil.Text = " ";
-            this.bTeraziOnEkSil.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.bTeraziOnEkSil.UseVisualStyleBackColor = false;
-            this.bTeraziOnEkSil.Click += new System.EventHandler(this.bTeraziOnEkSil_Click);
+            this.tabPage3.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.tabPage3.Controls.Add(this.lStandart1);
+            this.tabPage3.Controls.Add(this.bStandart1);
+            this.tabPage3.Location = new System.Drawing.Point(4, 24);
+            this.tabPage3.Name = "tabPage3";
+            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage3.Size = new System.Drawing.Size(616, 491);
+            this.tabPage3.TabIndex = 2;
+            this.tabPage3.Text = "YEDEK YÜKLEME";
             // 
-            // bTeraziOnEkKaydet
+            // lStandart1
             // 
-            this.bTeraziOnEkKaydet.BackColor = System.Drawing.Color.GreenYellow;
-            this.bTeraziOnEkKaydet.FlatAppearance.BorderColor = System.Drawing.Color.GreenYellow;
-            this.bTeraziOnEkKaydet.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bTeraziOnEkKaydet.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.bTeraziOnEkKaydet.ForeColor = System.Drawing.Color.White;
-            this.bTeraziOnEkKaydet.Image = global::HızlıSatis.Properties.Resources.save24;
-            this.bTeraziOnEkKaydet.Location = new System.Drawing.Point(129, 54);
-            this.bTeraziOnEkKaydet.Margin = new System.Windows.Forms.Padding(1);
-            this.bTeraziOnEkKaydet.Name = "bTeraziOnEkKaydet";
-            this.bTeraziOnEkKaydet.Size = new System.Drawing.Size(54, 39);
-            this.bTeraziOnEkKaydet.TabIndex = 6;
-            this.bTeraziOnEkKaydet.Text = " ";
-            this.bTeraziOnEkKaydet.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.bTeraziOnEkKaydet.UseVisualStyleBackColor = false;
-            this.bTeraziOnEkKaydet.Click += new System.EventHandler(this.bTeraziOnEkKaydet_Click);
-            // 
-            // bKartKomisyonAyarla
-            // 
-            this.bKartKomisyonAyarla.BackColor = System.Drawing.Color.GreenYellow;
-            this.bKartKomisyonAyarla.FlatAppearance.BorderColor = System.Drawing.Color.GreenYellow;
-            this.bKartKomisyonAyarla.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bKartKomisyonAyarla.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.bKartKomisyonAyarla.ForeColor = System.Drawing.Color.White;
-            this.bKartKomisyonAyarla.Image = global::HızlıSatis.Properties.Resources.save24;
-            this.bKartKomisyonAyarla.Location = new System.Drawing.Point(123, 3);
-            this.bKartKomisyonAyarla.Margin = new System.Windows.Forms.Padding(1);
-            this.bKartKomisyonAyarla.Name = "bKartKomisyonAyarla";
-            this.bKartKomisyonAyarla.Size = new System.Drawing.Size(54, 39);
-            this.bKartKomisyonAyarla.TabIndex = 2;
-            this.bKartKomisyonAyarla.Text = " ";
-            this.bKartKomisyonAyarla.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.bKartKomisyonAyarla.UseVisualStyleBackColor = false;
-            this.bKartKomisyonAyarla.Click += new System.EventHandler(this.bKartKomisyonAyarla_Click);
+            this.lStandart1.AutoSize = true;
+            this.lStandart1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.lStandart1.ForeColor = System.Drawing.Color.DarkCyan;
+            this.lStandart1.Location = new System.Drawing.Point(8, 43);
+            this.lStandart1.Name = "lStandart1";
+            this.lStandart1.Size = new System.Drawing.Size(535, 40);
+            this.lStandart1.TabIndex = 25;
+            this.lStandart1.Text = "Önceden Yedeği belirleyiniz, butona tıklayıp yedeğinizi tekrardan yükleyiniz. \r\nB" +
+    "u işlemi sadece gerektiğinde yapınız!";
             // 
             // bStandart1
             // 
@@ -847,18 +859,7 @@ namespace HızlıSatis
             this.bStandart1.Text = "Yedekten Yükle\r\n(RESTORE)";
             this.bStandart1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.bStandart1.UseVisualStyleBackColor = false;
-            // 
-            // lStandart1
-            // 
-            this.lStandart1.AutoSize = true;
-            this.lStandart1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.lStandart1.ForeColor = System.Drawing.Color.DarkCyan;
-            this.lStandart1.Location = new System.Drawing.Point(8, 43);
-            this.lStandart1.Name = "lStandart1";
-            this.lStandart1.Size = new System.Drawing.Size(535, 40);
-            this.lStandart1.TabIndex = 25;
-            this.lStandart1.Text = "Önceden Yedeği belirleyiniz, butona tıklayıp yedeğinizi tekrardan yükleyiniz. \r\nB" +
-    "u işlemi sadece gerektiğinde yapınız!";
+            this.bStandart1.Click += new System.EventHandler(this.bStandart1_Click);
             // 
             // fAyarlar
             // 
