@@ -124,8 +124,8 @@
   <data name="urungiris48541" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\urungiris48541.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Ekle24" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Ekle24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="rapor4854" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\rapor4854.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="barcode4832" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\barcode4832.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -147,9 +147,6 @@
   </data>
   <data name="exit4854" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\exit4854.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="rapor4854" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\rapor4854.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="tlBeyaz32" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\tlBeyaz32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -196,11 +193,20 @@
   <data name="delete" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\delete.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="barcode48321" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\barcode48321.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="tl_32_b" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\tl_32_b.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Ekle24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Ekle24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="remove1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\remove1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="restore4854" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\restore4854.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="kartnakit" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\kartnakit.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -208,8 +214,8 @@
   <data name="share (2)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\share (2).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="share (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\share (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="cancel241" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cancel241.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="kredikarti" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\kredikarti.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -220,10 +226,10 @@
   <data name="tl_48" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\tl_48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="cancel241" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\cancel241.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="share (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\share (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="restore4854" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\restore4854.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="scan-barcode-with-scanner-tool" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\scan-barcode-with-scanner-tool.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

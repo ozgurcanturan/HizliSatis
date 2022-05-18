@@ -40,6 +40,7 @@ namespace HızlıSatis
             this.lBarkod = new HızlıSatis.lStandart();
             this.lStandart1 = new HızlıSatis.lStandart();
             this.tbarkod = new HızlıSatis.tStandart();
+            this.lKullanici = new HızlıSatis.lStandart();
             this.SuspendLayout();
             // 
             // bKaydet
@@ -166,12 +167,24 @@ namespace HızlıSatis
             this.tbarkod.TabIndex = 0;
             this.tbarkod.KeyDown += new System.Windows.Forms.KeyEventHandler(this.tbarkod_KeyDown);
             // 
+            // lKullanici
+            // 
+            this.lKullanici.AutoSize = true;
+            this.lKullanici.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
+            this.lKullanici.ForeColor = System.Drawing.Color.DarkCyan;
+            this.lKullanici.Location = new System.Drawing.Point(8, 237);
+            this.lKullanici.Name = "lKullanici";
+            this.lKullanici.Size = new System.Drawing.Size(83, 20);
+            this.lKullanici.TabIndex = 14;
+            this.lKullanici.Text = "lStandart";
+            // 
             // fFiyatGuncelle
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.ClientSize = new System.Drawing.Size(287, 266);
+            this.Controls.Add(this.lKullanici);
             this.Controls.Add(this.lStandart5);
             this.Controls.Add(this.tYeniFiyat);
             this.Controls.Add(this.bKaydet);
@@ -204,5 +217,6 @@ namespace HızlıSatis
         private System.Windows.Forms.Button bKaydet;
         private tNumeric tYeniFiyat;
         private lStandart lStandart5;
+        internal lStandart lKullanici;
     }
 }

@@ -29,18 +29,18 @@ namespace HızlıSatis
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle18 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle16 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle17 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle19 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle24 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle20 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle21 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle22 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle23 = new System.Windows.Forms.DataGridViewCellStyle();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -178,7 +178,7 @@ namespace HızlıSatis
             this.splitContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.splitContainer1.FixedPanel = System.Windows.Forms.FixedPanel.Panel1;
             this.splitContainer1.Location = new System.Drawing.Point(0, 0);
-            this.splitContainer1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.splitContainer1.Margin = new System.Windows.Forms.Padding(2);
             this.splitContainer1.Name = "splitContainer1";
             // 
             // splitContainer1.Panel1
@@ -247,15 +247,15 @@ namespace HızlıSatis
             this.gridBekle.BackgroundColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.gridBekle.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.gridBekle.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.Padding = new System.Windows.Forms.Padding(3);
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.gridBekle.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle13.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
+            dataGridViewCellStyle13.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            dataGridViewCellStyle13.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle13.Padding = new System.Windows.Forms.Padding(3);
+            dataGridViewCellStyle13.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle13.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle13.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.gridBekle.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle13;
             this.gridBekle.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.gridBekle.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn1,
@@ -269,19 +269,19 @@ namespace HızlıSatis
             this.dataGridViewTextBoxColumn9,
             this.dataGridViewImageColumn2});
             this.gridBekle.EnableHeadersVisualStyles = false;
-            this.gridBekle.Location = new System.Drawing.Point(310, 17);
+            this.gridBekle.Location = new System.Drawing.Point(481, 61);
             this.gridBekle.Name = "gridBekle";
             this.gridBekle.RowHeadersVisible = false;
             this.gridBekle.RowHeadersWidth = 51;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            dataGridViewCellStyle6.Padding = new System.Windows.Forms.Padding(3);
-            this.gridBekle.RowsDefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle18.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            dataGridViewCellStyle18.Padding = new System.Windows.Forms.Padding(3);
+            this.gridBekle.RowsDefaultCellStyle = dataGridViewCellStyle18;
             this.gridBekle.RowTemplate.DefaultCellStyle.Padding = new System.Windows.Forms.Padding(3);
             this.gridBekle.RowTemplate.DefaultCellStyle.SelectionBackColor = System.Drawing.Color.Silver;
             this.gridBekle.RowTemplate.DefaultCellStyle.SelectionForeColor = System.Drawing.Color.Black;
             this.gridBekle.RowTemplate.Height = 32;
             this.gridBekle.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.gridBekle.Size = new System.Drawing.Size(86, 18);
+            this.gridBekle.Size = new System.Drawing.Size(34, 18);
             this.gridBekle.TabIndex = 8;
             this.gridBekle.Visible = false;
             // 
@@ -306,8 +306,8 @@ namespace HızlıSatis
             // 
             // dataGridViewTextBoxColumn4
             // 
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.dataGridViewTextBoxColumn4.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.dataGridViewTextBoxColumn4.DefaultCellStyle = dataGridViewCellStyle14;
             this.dataGridViewTextBoxColumn4.HeaderText = "Birim";
             this.dataGridViewTextBoxColumn4.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
@@ -328,28 +328,28 @@ namespace HızlıSatis
             // 
             // dataGridViewTextBoxColumn7
             // 
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            dataGridViewCellStyle3.Format = "C2";
-            dataGridViewCellStyle3.NullValue = null;
-            this.dataGridViewTextBoxColumn7.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle15.Format = "C2";
+            dataGridViewCellStyle15.NullValue = null;
+            this.dataGridViewTextBoxColumn7.DefaultCellStyle = dataGridViewCellStyle15;
             this.dataGridViewTextBoxColumn7.HeaderText = "Fiyat";
             this.dataGridViewTextBoxColumn7.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
             // 
             // dataGridViewTextBoxColumn8
             // 
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.dataGridViewTextBoxColumn8.DefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle16.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.dataGridViewTextBoxColumn8.DefaultCellStyle = dataGridViewCellStyle16;
             this.dataGridViewTextBoxColumn8.HeaderText = "Miktar";
             this.dataGridViewTextBoxColumn8.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
             // 
             // dataGridViewTextBoxColumn9
             // 
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            dataGridViewCellStyle5.Format = "C2";
-            dataGridViewCellStyle5.NullValue = null;
-            this.dataGridViewTextBoxColumn9.DefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle17.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle17.Format = "C2";
+            dataGridViewCellStyle17.NullValue = null;
+            this.dataGridViewTextBoxColumn9.DefaultCellStyle = dataGridViewCellStyle17;
             this.dataGridViewTextBoxColumn9.HeaderText = "Toplam";
             this.dataGridViewTextBoxColumn9.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn9.Name = "dataGridViewTextBoxColumn9";
@@ -386,10 +386,11 @@ namespace HızlıSatis
             // lKullanici
             // 
             this.lKullanici.AutoSize = true;
-            this.lKullanici.Location = new System.Drawing.Point(143, 17);
+            this.lKullanici.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lKullanici.Location = new System.Drawing.Point(408, 10);
             this.lKullanici.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lKullanici.Name = "lKullanici";
-            this.lKullanici.Size = new System.Drawing.Size(46, 13);
+            this.lKullanici.Size = new System.Drawing.Size(66, 20);
             this.lKullanici.TabIndex = 5;
             this.lKullanici.Text = "Kullanıcı";
             this.lKullanici.Visible = false;
@@ -464,15 +465,15 @@ namespace HızlıSatis
             this.gridSatisListesi.BackgroundColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.gridSatisListesi.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.gridSatisListesi.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
-            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
-            dataGridViewCellStyle7.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle7.Padding = new System.Windows.Forms.Padding(3);
-            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.gridSatisListesi.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle7;
+            dataGridViewCellStyle19.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle19.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
+            dataGridViewCellStyle19.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            dataGridViewCellStyle19.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle19.Padding = new System.Windows.Forms.Padding(3);
+            dataGridViewCellStyle19.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle19.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle19.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.gridSatisListesi.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle19;
             this.gridSatisListesi.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.gridSatisListesi.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Barkod,
@@ -491,9 +492,9 @@ namespace HızlıSatis
             this.gridSatisListesi.Name = "gridSatisListesi";
             this.gridSatisListesi.RowHeadersVisible = false;
             this.gridSatisListesi.RowHeadersWidth = 51;
-            dataGridViewCellStyle12.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            dataGridViewCellStyle12.Padding = new System.Windows.Forms.Padding(3);
-            this.gridSatisListesi.RowsDefaultCellStyle = dataGridViewCellStyle12;
+            dataGridViewCellStyle24.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            dataGridViewCellStyle24.Padding = new System.Windows.Forms.Padding(3);
+            this.gridSatisListesi.RowsDefaultCellStyle = dataGridViewCellStyle24;
             this.gridSatisListesi.RowTemplate.DefaultCellStyle.Padding = new System.Windows.Forms.Padding(3);
             this.gridSatisListesi.RowTemplate.DefaultCellStyle.SelectionBackColor = System.Drawing.Color.Silver;
             this.gridSatisListesi.RowTemplate.DefaultCellStyle.SelectionForeColor = System.Drawing.Color.Black;
@@ -524,8 +525,8 @@ namespace HızlıSatis
             // 
             // Birim
             // 
-            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.Birim.DefaultCellStyle = dataGridViewCellStyle8;
+            dataGridViewCellStyle20.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.Birim.DefaultCellStyle = dataGridViewCellStyle20;
             this.Birim.HeaderText = "Birim";
             this.Birim.MinimumWidth = 6;
             this.Birim.Name = "Birim";
@@ -546,28 +547,28 @@ namespace HızlıSatis
             // 
             // Fiyat
             // 
-            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            dataGridViewCellStyle9.Format = "C2";
-            dataGridViewCellStyle9.NullValue = null;
-            this.Fiyat.DefaultCellStyle = dataGridViewCellStyle9;
+            dataGridViewCellStyle21.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle21.Format = "C2";
+            dataGridViewCellStyle21.NullValue = null;
+            this.Fiyat.DefaultCellStyle = dataGridViewCellStyle21;
             this.Fiyat.HeaderText = "Fiyat";
             this.Fiyat.MinimumWidth = 6;
             this.Fiyat.Name = "Fiyat";
             // 
             // Miktar
             // 
-            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.Miktar.DefaultCellStyle = dataGridViewCellStyle10;
+            dataGridViewCellStyle22.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.Miktar.DefaultCellStyle = dataGridViewCellStyle22;
             this.Miktar.HeaderText = "Miktar";
             this.Miktar.MinimumWidth = 6;
             this.Miktar.Name = "Miktar";
             // 
             // Toplam
             // 
-            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            dataGridViewCellStyle11.Format = "C2";
-            dataGridViewCellStyle11.NullValue = null;
-            this.Toplam.DefaultCellStyle = dataGridViewCellStyle11;
+            dataGridViewCellStyle23.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle23.Format = "C2";
+            dataGridViewCellStyle23.NullValue = null;
+            this.Toplam.DefaultCellStyle = dataGridViewCellStyle23;
             this.Toplam.HeaderText = "Toplam";
             this.Toplam.MinimumWidth = 6;
             this.Toplam.Name = "Toplam";
@@ -1515,7 +1516,7 @@ namespace HızlıSatis
             this.bN1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.bN1.ForeColor = System.Drawing.Color.White;
             this.bN1.Location = new System.Drawing.Point(2, 2);
-            this.bN1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.bN1.Margin = new System.Windows.Forms.Padding(2);
             this.bN1.Name = "bN1";
             this.bN1.Size = new System.Drawing.Size(73, 30);
             this.bN1.TabIndex = 0;
@@ -1532,7 +1533,7 @@ namespace HızlıSatis
             this.bN2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.bN2.ForeColor = System.Drawing.Color.White;
             this.bN2.Location = new System.Drawing.Point(79, 2);
-            this.bN2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.bN2.Margin = new System.Windows.Forms.Padding(2);
             this.bN2.Name = "bN2";
             this.bN2.Size = new System.Drawing.Size(73, 30);
             this.bN2.TabIndex = 1;
@@ -1549,7 +1550,7 @@ namespace HızlıSatis
             this.bN3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.bN3.ForeColor = System.Drawing.Color.White;
             this.bN3.Location = new System.Drawing.Point(156, 2);
-            this.bN3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.bN3.Margin = new System.Windows.Forms.Padding(2);
             this.bN3.Name = "bN3";
             this.bN3.Size = new System.Drawing.Size(73, 30);
             this.bN3.TabIndex = 2;
@@ -1566,7 +1567,7 @@ namespace HızlıSatis
             this.bN4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.bN4.ForeColor = System.Drawing.Color.White;
             this.bN4.Location = new System.Drawing.Point(2, 36);
-            this.bN4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.bN4.Margin = new System.Windows.Forms.Padding(2);
             this.bN4.Name = "bN4";
             this.bN4.Size = new System.Drawing.Size(73, 30);
             this.bN4.TabIndex = 3;
@@ -1583,7 +1584,7 @@ namespace HızlıSatis
             this.bN5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.bN5.ForeColor = System.Drawing.Color.White;
             this.bN5.Location = new System.Drawing.Point(79, 36);
-            this.bN5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.bN5.Margin = new System.Windows.Forms.Padding(2);
             this.bN5.Name = "bN5";
             this.bN5.Size = new System.Drawing.Size(73, 30);
             this.bN5.TabIndex = 4;
@@ -1600,7 +1601,7 @@ namespace HızlıSatis
             this.bN6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.bN6.ForeColor = System.Drawing.Color.White;
             this.bN6.Location = new System.Drawing.Point(156, 36);
-            this.bN6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.bN6.Margin = new System.Windows.Forms.Padding(2);
             this.bN6.Name = "bN6";
             this.bN6.Size = new System.Drawing.Size(73, 30);
             this.bN6.TabIndex = 5;
@@ -1617,7 +1618,7 @@ namespace HızlıSatis
             this.bN7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.bN7.ForeColor = System.Drawing.Color.White;
             this.bN7.Location = new System.Drawing.Point(2, 70);
-            this.bN7.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.bN7.Margin = new System.Windows.Forms.Padding(2);
             this.bN7.Name = "bN7";
             this.bN7.Size = new System.Drawing.Size(73, 30);
             this.bN7.TabIndex = 6;
@@ -1634,7 +1635,7 @@ namespace HızlıSatis
             this.bN8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.bN8.ForeColor = System.Drawing.Color.White;
             this.bN8.Location = new System.Drawing.Point(79, 70);
-            this.bN8.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.bN8.Margin = new System.Windows.Forms.Padding(2);
             this.bN8.Name = "bN8";
             this.bN8.Size = new System.Drawing.Size(73, 30);
             this.bN8.TabIndex = 7;
@@ -1651,7 +1652,7 @@ namespace HızlıSatis
             this.bN9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.bN9.ForeColor = System.Drawing.Color.White;
             this.bN9.Location = new System.Drawing.Point(156, 70);
-            this.bN9.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.bN9.Margin = new System.Windows.Forms.Padding(2);
             this.bN9.Name = "bN9";
             this.bN9.Size = new System.Drawing.Size(73, 30);
             this.bN9.TabIndex = 8;
@@ -1668,7 +1669,7 @@ namespace HızlıSatis
             this.bNB.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.bNB.ForeColor = System.Drawing.Color.White;
             this.bNB.Location = new System.Drawing.Point(2, 104);
-            this.bNB.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.bNB.Margin = new System.Windows.Forms.Padding(2);
             this.bNB.Name = "bNB";
             this.bNB.Size = new System.Drawing.Size(73, 31);
             this.bNB.TabIndex = 9;
@@ -1685,7 +1686,7 @@ namespace HızlıSatis
             this.bN0.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.bN0.ForeColor = System.Drawing.Color.White;
             this.bN0.Location = new System.Drawing.Point(79, 104);
-            this.bN0.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.bN0.Margin = new System.Windows.Forms.Padding(2);
             this.bN0.Name = "bN0";
             this.bN0.Size = new System.Drawing.Size(73, 31);
             this.bN0.TabIndex = 10;
@@ -1702,7 +1703,7 @@ namespace HızlıSatis
             this.bNV.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.bNV.ForeColor = System.Drawing.Color.White;
             this.bNV.Location = new System.Drawing.Point(156, 104);
-            this.bNV.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.bNV.Margin = new System.Windows.Forms.Padding(2);
             this.bNV.Name = "bNV";
             this.bNV.Size = new System.Drawing.Size(73, 31);
             this.bNV.TabIndex = 11;
@@ -1884,7 +1885,7 @@ namespace HızlıSatis
             this.ClientSize = new System.Drawing.Size(1155, 627);
             this.Controls.Add(this.splitContainer1);
             this.KeyPreview = true;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "fSatis";
             this.Text = "Barkodlu Satış Programı";
             this.Load += new System.EventHandler(this.fSatis_Load);

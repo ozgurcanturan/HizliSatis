@@ -91,6 +91,7 @@ namespace HızlıSatis
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.lStandart1 = new HızlıSatis.lStandart();
             this.bStandart1 = new HızlıSatis.bStandart();
+            this.lKullanici = new HızlıSatis.lStandart();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
@@ -141,6 +142,7 @@ namespace HızlıSatis
             // splitContainer1.Panel1
             // 
             this.splitContainer1.Panel1.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.splitContainer1.Panel1.Controls.Add(this.lKullanici);
             this.splitContainer1.Panel1.Controls.Add(this.lKullaniciId);
             this.splitContainer1.Panel1.Controls.Add(this.lStandart8);
             this.splitContainer1.Panel1.Controls.Add(this.chYedekleme);
@@ -177,7 +179,7 @@ namespace HızlıSatis
             this.lKullaniciId.AutoSize = true;
             this.lKullaniciId.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.lKullaniciId.ForeColor = System.Drawing.Color.DarkCyan;
-            this.lKullaniciId.Location = new System.Drawing.Point(149, 15);
+            this.lKullaniciId.Location = new System.Drawing.Point(149, 0);
             this.lKullaniciId.Name = "lKullaniciId";
             this.lKullaniciId.Size = new System.Drawing.Size(83, 20);
             this.lKullaniciId.TabIndex = 16;
@@ -861,6 +863,18 @@ namespace HızlıSatis
             this.bStandart1.UseVisualStyleBackColor = false;
             this.bStandart1.Click += new System.EventHandler(this.bStandart1_Click);
             // 
+            // lKullanici
+            // 
+            this.lKullanici.AutoSize = true;
+            this.lKullanici.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.lKullanici.ForeColor = System.Drawing.Color.DarkCyan;
+            this.lKullanici.Location = new System.Drawing.Point(6, 180);
+            this.lKullanici.Name = "lKullanici";
+            this.lKullanici.Size = new System.Drawing.Size(66, 20);
+            this.lKullanici.TabIndex = 17;
+            this.lKullanici.Text = "Kullanıcı";
+            this.lKullanici.Visible = false;
+            // 
             // fAyarlar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -957,5 +971,6 @@ namespace HızlıSatis
         private System.Windows.Forms.TabPage tabPage3;
         private bStandart bStandart1;
         private lStandart lStandart1;
+        internal lStandart lKullanici;
     }
 }

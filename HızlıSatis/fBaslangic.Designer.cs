@@ -102,6 +102,7 @@ namespace HızlıSatis
             this.bKullaniciDegistir.Text = "Kullanıcı Değiştir";
             this.bKullaniciDegistir.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.bKullaniciDegistir.UseVisualStyleBackColor = false;
+            this.bKullaniciDegistir.Click += new System.EventHandler(this.bKullaniciDegistir_Click);
             // 
             // bYedekleme
             // 
@@ -232,24 +233,24 @@ namespace HızlıSatis
             // lKullanici
             // 
             this.lKullanici.AutoSize = true;
+            this.lKullanici.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.lKullanici.ForeColor = System.Drawing.Color.White;
             this.lKullanici.Location = new System.Drawing.Point(76, 459);
             this.lKullanici.Name = "lKullanici";
-            this.lKullanici.Size = new System.Drawing.Size(54, 15);
+            this.lKullanici.Size = new System.Drawing.Size(66, 20);
             this.lKullanici.TabIndex = 1;
             this.lKullanici.Text = "Kullanıcı";
-            this.lKullanici.Visible = false;
             // 
             // lIsyeri
             // 
             this.lIsyeri.AutoSize = true;
+            this.lIsyeri.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.lIsyeri.ForeColor = System.Drawing.Color.White;
             this.lIsyeri.Location = new System.Drawing.Point(76, 21);
             this.lIsyeri.Name = "lIsyeri";
-            this.lIsyeri.Size = new System.Drawing.Size(54, 15);
+            this.lIsyeri.Size = new System.Drawing.Size(104, 29);
             this.lIsyeri.TabIndex = 1;
             this.lIsyeri.Text = "Kullanıcı";
-            this.lIsyeri.Visible = false;
             // 
             // fBaslangic
             // 
@@ -279,16 +280,16 @@ namespace HızlıSatis
         #endregion
 
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
-        private System.Windows.Forms.Button bSatisİslemi;
-        private System.Windows.Forms.Button bCikis;
-        private System.Windows.Forms.Button bKullaniciDegistir;
-        private System.Windows.Forms.Button bYedekleme;
-        private System.Windows.Forms.Button bFiyatGüncelle;
-        private System.Windows.Forms.Button bAyarlar;
-        private System.Windows.Forms.Button bUrunGiris;
-        private System.Windows.Forms.Button bStok;
-        private System.Windows.Forms.Button bGenelRapor;
-        private System.Windows.Forms.Label lKullanici;
-        private System.Windows.Forms.Label lIsyeri;
+        public System.Windows.Forms.Button bSatisİslemi;
+        public System.Windows.Forms.Button bCikis;
+        public System.Windows.Forms.Button bKullaniciDegistir;
+        public System.Windows.Forms.Button bYedekleme;
+        public System.Windows.Forms.Button bFiyatGüncelle;
+        public System.Windows.Forms.Button bAyarlar;
+        public System.Windows.Forms.Button bUrunGiris;
+        public System.Windows.Forms.Button bStok;
+        public System.Windows.Forms.Button bGenelRapor;
+        public System.Windows.Forms.Label lKullanici;
+        public System.Windows.Forms.Label lIsyeri;
     }
 }

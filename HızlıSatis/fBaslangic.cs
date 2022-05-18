@@ -61,18 +61,27 @@ namespace HızlıSatis
         private void bFiyatGüncelle_Click(object sender, EventArgs e)
         {
             fFiyatGuncelle f = new fFiyatGuncelle();
+            f.lKullanici.Text = lKullanici.Text;
             f.ShowDialog();
         }
 
         private void bAyarlar_Click(object sender, EventArgs e)
         {
             fAyarlar f = new fAyarlar();
+            f.lKullanici.Text = lKullanici.Text;
             f.ShowDialog();
         }
 
         private void bYedekleme_Click(object sender, EventArgs e)
         {
             Islemler.Backup();
+        }
+
+        private void bKullaniciDegistir_Click(object sender, EventArgs e)
+        {
+            fLogin login = new fLogin();
+            login.Show();
+            this.Hide();
         }
     }
 }

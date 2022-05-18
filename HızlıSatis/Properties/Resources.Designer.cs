@@ -123,6 +123,16 @@ namespace HızlıSatis.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap barcode48321 {
+            get {
+                object obj = ResourceManager.GetObject("barcode48321", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap cancel24 {
             get {
                 object obj = ResourceManager.GetObject("cancel24", resourceCulture);
@@ -306,6 +316,16 @@ namespace HızlıSatis.Properties {
         internal static System.Drawing.Bitmap save241 {
             get {
                 object obj = ResourceManager.GetObject("save241", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap scan_barcode_with_scanner_tool {
+            get {
+                object obj = ResourceManager.GetObject("scan-barcode-with-scanner-tool", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -127,6 +127,12 @@
     <Compile Include="fHizliButonUrunEkle.Designer.cs">
       <DependentUpon>fHizliButonUrunEkle.cs</DependentUpon>
     </Compile>
+    <Compile Include="fLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fLogin.Designer.cs">
+      <DependentUpon>fLogin.cs</DependentUpon>
+    </Compile>
     <Compile Include="fNakitKart.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -238,6 +244,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="fHizliButonUrunEkle.resx">
       <DependentUpon>fHizliButonUrunEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fLogin.resx">
+      <DependentUpon>fLogin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="fNakitKart.resx">
       <DependentUpon>fNakitKart.cs</DependentUpon>
@@ -354,6 +363,8 @@
     <None Include="Resources\cancel242.png" />
     <None Include="Resources\save241.png" />
     <None Include="Resources\restore4854.png" />
+    <None Include="Resources\barcode48321.png" />
+    <None Include="Resources\scan-barcode-with-scanner-tool.png" />
     <Content Include="SqlServerTypes\readme.htm" />
     <Content Include="SqlServerTypes\x64\msvcr120.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
