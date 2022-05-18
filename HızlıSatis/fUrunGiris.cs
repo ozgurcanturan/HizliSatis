@@ -63,6 +63,7 @@ namespace HızlıSatis
                     guncelle.KdvOrani = Convert.ToInt16(tKdvOrani.Text);
                     guncelle.KdvTutari = Math.Round(Islemler.DoubleYap(tSatisFiyati.Text) * Convert.ToInt16(tKdvOrani.Text) / 100, 2);
                     guncelle.Miktar += Convert.ToDouble(tMiktar.Text);
+                    guncelle.Onay = true;
                     if (chUrunTipi.Checked)
                     {
                         guncelle.Birim = "Kg";
@@ -89,6 +90,7 @@ namespace HızlıSatis
                     urun.KdvOrani = Convert.ToInt16(tKdvOrani.Text);
                     urun.KdvTutari = Math.Round(Islemler.DoubleYap(tSatisFiyati.Text) * Convert.ToInt16(tKdvOrani.Text) / 100, 2);
                     urun.Miktar = Convert.ToDouble(tMiktar.Text);
+                    urun.Onay = true;
                     if (chUrunTipi.Checked)
                     {
                         urun.Birim = "Kg";
@@ -274,6 +276,20 @@ namespace HızlıSatis
                     chUrunTipi.Checked = false;
                 }
 
+            }
+        }
+
+        private void bStandart1_Click(object sender, EventArgs e)
+        {
+            DialogResult onay = MessageBox.Show("!! Lütfen Dikkat : \n Ürün fiyat düzenlemelerinin TAMAMINI yaptıysanız bu işlemi onaylayınız.","DİKKAT - Kullanılmayan Ürün Silme İşlemi",MessageBoxButtons.YesNo);
+            if (onay==DialogResult.Yes)
+            {
+                Cursor.Current = Cursors.WaitCursor;
+                db.Urun.RemoveRange(db.Urun.Where(x => x.Onay == false));
+                db.SaveChanges();
+                UrunSay();
+                MessageBox.Show("Kullanılmayan Ürünler Temizlendi.");
+                Cursor.Current = Cursors.Default;
             }
         }
     }

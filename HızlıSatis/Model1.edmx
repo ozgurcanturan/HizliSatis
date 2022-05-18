@@ -133,6 +133,7 @@
           <Property Name="Miktar" Type="float" />
           <Property Name="Tarih" Type="datetime" />
           <Property Name="Kullanıcı" Type="nvarchar" MaxLength="50" />
+          <Property Name="Onay" Type="bit" />
         </EntityType>
         <EntityType Name="UrunGrup">
           <Key>
@@ -175,6 +176,7 @@
           <Property Name="Miktar" Type="Double" />
           <Property Name="Tarih" Type="DateTime" Precision="3" />
           <Property Name="Kullanıcı" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Onay" Type="Boolean" />
         </EntityType>
         <EntityContainer Name="BarkodDbEntities" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="Urun" EntityType="Self.Urun" />
@@ -316,6 +318,7 @@
           <EntitySetMapping Name="Urun">
             <EntityTypeMapping TypeName="BarkodDbModel.Urun">
               <MappingFragment StoreEntitySet="Urun">
+                <ScalarProperty Name="Onay" ColumnName="Onay" />
                 <ScalarProperty Name="UrunId" ColumnName="UrunId" />
                 <ScalarProperty Name="Barkod" ColumnName="Barkod" />
                 <ScalarProperty Name="UrunAd" ColumnName="UrunAd" />

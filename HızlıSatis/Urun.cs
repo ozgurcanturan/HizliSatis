@@ -27,5 +27,6 @@ namespace HızlıSatis
         public Nullable<double> Miktar { get; set; }
         public Nullable<System.DateTime> Tarih { get; set; }
         public string Kullanıcı { get; set; }
+        public Nullable<bool> Onay { get; set; }
     }
 }

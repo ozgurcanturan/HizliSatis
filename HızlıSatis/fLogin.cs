@@ -19,6 +19,11 @@ namespace HızlıSatis
 
         private void bGiris_Click(object sender, EventArgs e)
         {
+            GirisYap();
+        }
+
+        private void GirisYap()
+        {
             if (tKullaniciAdi.Text != "" && tSifre.Text != "")
             {
                 try
@@ -28,7 +33,7 @@ namespace HızlıSatis
                         if (db.Kullanici.Any())
                         {
                             var bak = db.Kullanici.Where(x => x.KullaniciAd == tKullaniciAdi.Text && x.Sifre == tSifre.Text).FirstOrDefault();
-                            if (bak!=null)
+                            if (bak != null)
                             {
                                 Cursor.Current = Cursors.WaitCursor;
                                 fBaslangic f = new fBaslangic();
@@ -51,6 +56,10 @@ namespace HızlıSatis
                                 MessageBox.Show("Hatalı Giriş");
                             }
                         }
+                        else
+                        {
+                            MessageBox.Show("Kullanıcı Adı Şifre Tablosunda Hata x 003");
+                        }
                     }
                 }
                 catch (Exception ex)
@@ -58,6 +67,14 @@ namespace HızlıSatis
 
                     MessageBox.Show(ex.ToString() + "Test");
                 }
+            }
+        }
+
+        private void bGiris_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                GirisYap();
             }
         }
     }

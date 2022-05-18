@@ -99,6 +99,7 @@ namespace HızlıSatis
             this.bGiris.Text = "Giriş";
             this.bGiris.UseVisualStyleBackColor = false;
             this.bGiris.Click += new System.EventHandler(this.bGiris_Click);
+            this.bGiris.KeyDown += new System.Windows.Forms.KeyEventHandler(this.bGiris_KeyDown);
             // 
             // tSifre
             // 
@@ -124,6 +125,7 @@ namespace HızlıSatis
             this.Controls.Add(this.tKullaniciAdi);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.KeyPreview = true;
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.MaximizeBox = false;
             this.MaximumSize = new System.Drawing.Size(503, 224);
@@ -132,6 +134,7 @@ namespace HızlıSatis
             this.Name = "fLogin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Giriş";
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.bGiris_KeyDown);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

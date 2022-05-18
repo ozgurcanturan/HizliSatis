@@ -30,9 +30,10 @@ namespace HızlıSatis
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
+            this.bStandart1 = new HızlıSatis.bStandart();
             this.chUrunTipi = new System.Windows.Forms.CheckBox();
             this.tAlisFiyati = new System.Windows.Forms.TextBox();
             this.tSatisFiyati = new System.Windows.Forms.TextBox();
@@ -42,7 +43,6 @@ namespace HızlıSatis
             this.lStandart10 = new HızlıSatis.lStandart();
             this.tUrunAra = new HızlıSatis.tStandart();
             this.lStandart9 = new HızlıSatis.lStandart();
-            this.bRaporAl = new HızlıSatis.bStandart();
             this.bKaydet = new HızlıSatis.bStandart();
             this.bİptal = new HızlıSatis.bStandart();
             this.bBarkodOlustur = new HızlıSatis.bStandart();
@@ -84,6 +84,7 @@ namespace HızlıSatis
             // 
             // splitContainer1.Panel1
             // 
+            this.splitContainer1.Panel1.Controls.Add(this.bStandart1);
             this.splitContainer1.Panel1.Controls.Add(this.chUrunTipi);
             this.splitContainer1.Panel1.Controls.Add(this.tAlisFiyati);
             this.splitContainer1.Panel1.Controls.Add(this.tSatisFiyati);
@@ -93,7 +94,6 @@ namespace HızlıSatis
             this.splitContainer1.Panel1.Controls.Add(this.lStandart10);
             this.splitContainer1.Panel1.Controls.Add(this.tUrunAra);
             this.splitContainer1.Panel1.Controls.Add(this.lStandart9);
-            this.splitContainer1.Panel1.Controls.Add(this.bRaporAl);
             this.splitContainer1.Panel1.Controls.Add(this.bKaydet);
             this.splitContainer1.Panel1.Controls.Add(this.bİptal);
             this.splitContainer1.Panel1.Controls.Add(this.bBarkodOlustur);
@@ -120,6 +120,24 @@ namespace HızlıSatis
             this.splitContainer1.SplitterDistance = 248;
             this.splitContainer1.SplitterWidth = 3;
             this.splitContainer1.TabIndex = 0;
+            // 
+            // bStandart1
+            // 
+            this.bStandart1.BackColor = System.Drawing.Color.DarkRed;
+            this.bStandart1.FlatAppearance.BorderColor = System.Drawing.Color.DarkRed;
+            this.bStandart1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bStandart1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.bStandart1.ForeColor = System.Drawing.Color.White;
+            this.bStandart1.Image = global::HızlıSatis.Properties.Resources.cancel24;
+            this.bStandart1.Location = new System.Drawing.Point(696, 76);
+            this.bStandart1.Margin = new System.Windows.Forms.Padding(1);
+            this.bStandart1.Name = "bStandart1";
+            this.bStandart1.Size = new System.Drawing.Size(131, 72);
+            this.bStandart1.TabIndex = 29;
+            this.bStandart1.Text = "Kullanılmayan Ürünleri Sil";
+            this.bStandart1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.bStandart1.UseVisualStyleBackColor = false;
+            this.bStandart1.Click += new System.EventHandler(this.bStandart1_Click);
             // 
             // chUrunTipi
             // 
@@ -236,23 +254,6 @@ namespace HızlıSatis
             this.lStandart9.Size = new System.Drawing.Size(73, 20);
             this.lStandart9.TabIndex = 22;
             this.lStandart9.Text = "Ürün Ara";
-            // 
-            // bRaporAl
-            // 
-            this.bRaporAl.BackColor = System.Drawing.Color.OrangeRed;
-            this.bRaporAl.FlatAppearance.BorderColor = System.Drawing.Color.OrangeRed;
-            this.bRaporAl.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bRaporAl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.bRaporAl.ForeColor = System.Drawing.Color.White;
-            this.bRaporAl.Image = global::HızlıSatis.Properties.Resources.share__2_;
-            this.bRaporAl.Location = new System.Drawing.Point(711, 42);
-            this.bRaporAl.Margin = new System.Windows.Forms.Padding(1);
-            this.bRaporAl.Name = "bRaporAl";
-            this.bRaporAl.Size = new System.Drawing.Size(116, 60);
-            this.bRaporAl.TabIndex = 14;
-            this.bRaporAl.Text = "Rapor Al";
-            this.bRaporAl.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.bRaporAl.UseVisualStyleBackColor = false;
             // 
             // bKaydet
             // 
@@ -495,17 +496,17 @@ namespace HızlıSatis
             this.gridUrunler.BackgroundColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.gridUrunler.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.gridUrunler.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.Padding = new System.Windows.Forms.Padding(3);
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.gridUrunler.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.Padding = new System.Windows.Forms.Padding(3);
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.gridUrunler.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.gridUrunler.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.gridUrunler.DefaultCellStyle = dataGridViewCellStyle3;
+            this.gridUrunler.DefaultCellStyle = dataGridViewCellStyle1;
             this.gridUrunler.Dock = System.Windows.Forms.DockStyle.Fill;
             this.gridUrunler.EnableHeadersVisualStyles = false;
             this.gridUrunler.Location = new System.Drawing.Point(0, 0);
@@ -514,15 +515,15 @@ namespace HızlıSatis
             this.gridUrunler.ReadOnly = true;
             this.gridUrunler.RowHeadersVisible = false;
             this.gridUrunler.RowHeadersWidth = 51;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle4.Padding = new System.Windows.Forms.Padding(3);
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.gridUrunler.RowsDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle2.Padding = new System.Windows.Forms.Padding(3);
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.gridUrunler.RowsDefaultCellStyle = dataGridViewCellStyle2;
             this.gridUrunler.RowTemplate.ContextMenuStrip = this.contextMenuStrip1;
             this.gridUrunler.RowTemplate.DefaultCellStyle.Padding = new System.Windows.Forms.Padding(3);
             this.gridUrunler.RowTemplate.DefaultCellStyle.SelectionBackColor = System.Drawing.Color.Silver;
@@ -585,7 +586,6 @@ namespace HızlıSatis
         private lStandart lStandart10;
         private tStandart tUrunAra;
         private lStandart lStandart9;
-        private bStandart bRaporAl;
         private bStandart bKaydet;
         private bStandart bİptal;
         private bStandart bBarkodOlustur;
@@ -613,5 +613,6 @@ namespace HızlıSatis
         private System.Windows.Forms.ToolStripMenuItem silToolStripMenuItem;
         private System.Windows.Forms.CheckBox chUrunTipi;
         private System.Windows.Forms.ToolStripMenuItem düzenleToolStripMenuItem;
+        private bStandart bStandart1;
     }
 }
